@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+authors:
+- family-names: "Olga"
+  given-names: "Giraldo"
+  orcid: "https://orcid.org/"
+- family-names: "Lukas"
+  given-names: "Geist"
+  orcid: "https://orcid.org/"
+- family-names: "Nelson"
+  given-names: "Quiñones"
+- family-names: "Dhwani"
+  given-names: "Solanki"
+- family-names: "Dietrich"
+  given-names: "Rebholz-Schuhmann"
+  orcid: "https://orcid.org/"
+title: "Machine-actionable Software Management Plans"
+version: 0.0.1
+url: "https://github.com/zbmed-semtec/maSPMs"
