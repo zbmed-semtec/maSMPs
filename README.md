@@ -1,5 +1,7 @@
 # Metadata model for machine-actionable Software Management Plans
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7806639.svg)](https://doi.org/10.5281/zenodo.7806639)
+
 <table><tr><td valign="top">
 
 <h3>About</h3>
