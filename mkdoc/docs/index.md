@@ -7,20 +7,10 @@ This project corresponds to an extension of the Research Data Alliance (RDA) [ma
 
 Additional Information available at our [GitHub Page](https://github.com/zbmed-semtec/maSPMs).
 
-Please visit the Literature reference at [DOI](https://doi.org/10.5281/zenodo.7806639).
+Ontology releases available at [DOI](https://doi.org/10.5281/zenodo.7806639).
 
 
-
-
-## Relevant sources
+## Relevant background sources
 * [RDA machine-actionable Data Management Plan (maDMP)](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard)
 * [ELIXIR Software Management Plans (SMPs)](https://doi.org/10.37044/osf.io/k8znb)
 * [Practical guide to Software Management Plans](https://zenodo.org/record/7248877#.Y4XeHXaZOUk)
-
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.

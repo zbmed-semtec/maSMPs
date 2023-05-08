@@ -1,15 +1,17 @@
 <h1> About us</h1>
 
 <p>
-A metadata model containing the required metadata items for a maSMP has been established in the form of an ontology. The software management planning entities that are included in the metadata model include the SMP itself, software source code, software releases, documentation, authors, and their connections. With a few of our own additions, we primarily utilize terms from schema.org and DCSO.</p>
+A metadata model containing the required metadata items for an maSMP has been established in the form of an ontology. The software management planning entities that are included in the metadata model include the SMP itself, software source code, software releases, documentation, authors, and their connections. With a few of our own additions, we primarily utilize terms from schema.org and DCSO.</p>
 
-## Contributors
-Contact person for the SMP:
+## Team
+* [Olga Giraldo](https://www.zbmed.de/en/contact-details/olga-giraldo), giraldo AT zbmed DOT de
+* Lukas Geist
+* Nelson Quiñones
+* Dhwani Solanki
+* Dietrich Rebholz-Schuhmann
+* [Leyla Jael Castro](https://www.zbmed.de/en/contact-details/leyla-jael-castro), garcia-castro AT zbmed DOT de
 
-
-1. [Dr. Leyla Jael Castro](https://www.zbmed.de/en/contact-details/leyla-jael-castro), (<garcia-castro@zbmed.de>)
-2. [Dr. Olga Giraldo](https://www.zbmed.de/en/contact-details/olga-giraldo), (<giraldo@zbmed.de>)
-
+[CITATION file available](https://github.com/zbmed-semtec/maSPMs/blob/main/CITATION.cff)
 
 ## Acknowledgements
 <p>
