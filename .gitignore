@@ -1,7 +1,5 @@
 site/
-mkdoc/site/
 venv/
-mkdoc/venv/
 
 .DS_Store*
 
