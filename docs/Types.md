@@ -1,3 +1,50 @@
 ## Classes <br>
+- [Agent](class_proprerty_relationship/Agent.md) <br>     
+       
+- [Text](class_proprerty_relationship/Text.md) <br>
 
-<ul><li>Documentation</li></ul><ul><li>SMP</li></ul><ul><li>TestAction</li></ul><ul><li>Agent</li></ul><ul><li>FormalParameter</li></ul><ul><li>Action</li></ul><ul><li>Boolean</li></ul><ul><li>CreativeWork</li></ul><ul><li>DataType</li></ul><ul><li>Dataset-SMP</li></ul><ul><li>Date</li></ul><ul><li>DefinedTerm</li></ul><ul><li>Intangible</li></ul><ul><li>LearningResource</li></ul><ul><li>Organization</li></ul><ul><li>Person</li></ul><ul><li>PropertyValue</li></ul><ul><li>SoftwareApplication</li></ul><ul><li>SoftwareSourceCode</li></ul><ul><li>Text</li></ul><ul><li>URL</li></ul><ul><li>Dataset-DMP</li></ul><ul><li>Id</li></ul><ul><li>License</li></ul>
+- [License](class_proprerty_relationship/License.md) <br>
+
+- [SoftwareApplication](class_proprerty_relationship/SoftwareApplication.md)<br>
+
+- [URL](class_proprerty_relationship/URL.md)<br>
+
+- [FormalParameter](class_proprerty_relationship/FormalParameter.md)<br>
+
+- [TestAction](class_proprerty_relationship/TestAction.md)<br>
+
+- [Date](class_proprerty_relationship/Date.md)<br>
+
+- [DataType](class_proprerty_relationship/DataType.md)<br>
+
+- [SoftwareSourceCode](class_proprerty_relationship/SoftwareSourceCode.md)<br>
+
+- [PropertyValue](class_proprerty_relationship/PropertyValue.md)<br>
+
+- [Dataset-SMP](class_proprerty_relationship/Dataset-SMP.md)<br>
+
+- [DefinedTerm](class_proprerty_relationship/DefinedTerm.md)<br>
+
+- [CreativeWork](class_proprerty_relationship/CreativeWork.md)<br>
+
+- [Id](class_proprerty_relationship/Id.md)<br>
+
+- [Person](class_proprerty_relationship/Person.md)<br>
+
+- [Intangible](class_proprerty_relationship/Intangible.md)<br>
+
+- [SMP](class_proprerty_relationship/SMP.md)<br>
+
+- [Dataset-DMP](class_proprerty_relationship/Dataset-DMP.md)<br>
+
+- [Documentation](class_proprerty_relationship/Documentation.md)<br>
+
+- [LearningResource](class_proprerty_relationship/LearningResource.md)<br>
+
+- [Action](class_proprerty_relationship/Action.md)<br>
+
+- [Boolean](class_proprerty_relationship/Boolean.md)<br>
+
+- [Organization](class_proprerty_relationship/Organization.md)<br>
+
+<!-- <a href="../class_proprerty_relationship/about.md">text that responds to link</a> -->
