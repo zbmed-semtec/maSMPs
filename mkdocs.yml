@@ -1,5 +1,42 @@
 site_name: maSMP
 site_url: https://masmp.com/
+nav:
+    - 'index.md'
+    - 'maSMP_Schema.md'
+    - 'Types.md'
+    - 'ObjectProperty.md'
+    - class proprerty relationship:
+      - 'class_proprerty_relationship/Action.md'
+      - 'class_proprerty_relationship/Agent.md'
+      - 'class_proprerty_relationship/CreativeWork.md'
+      - 'class_proprerty_relationship/Boolean.md'
+      - 'class_proprerty_relationship/TestAction.md'
+      - 'class_proprerty_relationship/SoftwareSourceCode.md'
+      - 'class_proprerty_relationship/SoftwareApplication.md'
+      - 'class_proprerty_relationship/Dataset-DMP.md'
+      - 'class_proprerty_relationship/Dataset-SMP.md'
+      - 'class_proprerty_relationship/DataType.md'
+      - 'class_proprerty_relationship/Date.md'
+      - 'class_proprerty_relationship/DefinedTerm.md'
+      - 'class_proprerty_relationship/Documentation.md'
+      - 'class_proprerty_relationship/FormalParameter.md'
+      - 'class_proprerty_relationship/Id.md'
+      - 'class_proprerty_relationship/Intangible.md'
+      - 'class_proprerty_relationship/LearningResource.md'
+      - 'class_proprerty_relationship/License.md'
+      - 'class_proprerty_relationship/Organization.md'
+      - 'class_proprerty_relationship/Person.md'
+      - 'class_proprerty_relationship/PropertyValue.md'
+      - 'class_proprerty_relationship/SMP.md'
+      - 'class_proprerty_relationship/Text.md'
+      - 'class_proprerty_relationship/URL.md'
+    - object property relationship:
+      - 'object_property_relationship/Object_Proprerty_relationship.md'
+
+    - About Us:
+      - 'About_Us/about.md'
+      
+    
 theme:
   name: readthedocs
   
