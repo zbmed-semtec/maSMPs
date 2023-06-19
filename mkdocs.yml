@@ -1,4 +1,5 @@
 site_name: maSMP
+site_url: https://masmp.com/
 theme:
   name: readthedocs
   
