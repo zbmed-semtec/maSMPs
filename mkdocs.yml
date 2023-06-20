@@ -38,7 +38,7 @@ nav:
       
     
 theme:
-  name: readthedocs
+  name: material
   
   language: en
   palette:
@@ -75,6 +75,9 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - md_in_html
+
+plugins:
+  - search
 
 
   
