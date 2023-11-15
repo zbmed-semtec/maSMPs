@@ -14,21 +14,6 @@
       "rdfs:subClassOf": {
         "@id": "schema:Action"
       },
-      "$validation": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "properties": {
-          "testType": {
-            "description": "The type of test that it is performed on the object."
-          },
-          "testInput": {
-            "description": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.."
-          }
-        },
-        "required": [],
-        "recommended": [],
-        "optional": []
-      },
       "schemaVersion": [
         "https://schema.org/docs/releases.html#v23.0"
       ]
