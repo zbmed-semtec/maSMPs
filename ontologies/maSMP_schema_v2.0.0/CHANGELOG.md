@@ -8,7 +8,8 @@ In this new verson of the maSMP metadata schema we:
 * Whenever [Codemeta terms](https://codemeta.github.io/terms/) are used, we use their namespace https://w3id.org/codemeta/
 * Whenever [Bioschemas](https://bioschemas.org) new types and properties are used, we use their namespace https://bioschemas.org/terms/
 * `schema:SoftwareSourceCode` is extended to `NFDI4DSatZBMED:SoftwareSourceCode` and `schema:SoftwareApplication` to `NFDI4DSatZBMED:SoftwareApplication` so we can include our new properties. The new properties remain the same as in version 1 but we make the names more "schema-like" by using nouns, e.g., `documentationAPI` rather than actions `hasAPIDocumentation`. The property mapping between version 1 and version 2 are:
-   * `hasAPIDocumentation` = `documentationAPI`
+   * `hasAPIDocumentation` = `schema:documentation` as the definition "Further documentation describing the Web API in more detail" fits well
+   * `documenation` = `furtherDocumentation`
    * `hasDeveloperDocumentation` = `developerDocumentation`
    * `hasUserDocumentation` = `userDocumentation`
    * `hasVersionControlSystem` = `versionControlSystem`
