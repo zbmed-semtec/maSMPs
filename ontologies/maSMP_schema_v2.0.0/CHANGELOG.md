@@ -21,4 +21,4 @@ In this new verson of the maSMP metadata schema we:
    * `NFDI4DSatZBMED:testInput`
    * There is no need for `NFDI4DSatZBMED:testOutput` as the exisiting property `schema:results` work for this purpose
 * Due to the simplification of `NFDI4DSatZBMED:TestAction`, the extensions to `NFDI4DSatZBMED:testType` (e.g., `endToEndTesting`, `functionalTesting`) are no longer needed. Rather, a profile will recommend the use of a list of possible software test types from, e.g., [Wikidata software testing](https://www.wikidata.org/wiki/Q188522).
-* We add a new type `NFDI4DSatZBMED:SoftwareRunAction` to capture an example on how a software can be executed with some sample input to obtain a corresponding sample output.
+* We add a new type `NFDI4DSatZBMED:SoftwareRunAction` to capture an example on how a software can be executed with some sample input to obtain a corresponding sample output (reports of executions by third parties would also be possible).

@@ -41,7 +41,7 @@
     {
       "@id": "NFDI4DSatZBMED:testInput",
       "@type": "rdf:Property",
-      "rdfs:comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help..",
+      "rdfs:comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.",
       "rdfs:label": "testInput",
       "schema:domainIncludes": {
         "@id": "NFDI4DSatZBMED:TestAction"
