@@ -21,10 +21,10 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:documentationAPI",
+      "@id": "NFDI4DSatZBMED:furtherDocumentation",
       "@type": "rdf:Property",
-      "rdfs:comment": "API documentation corresponding to this software",
-      "rdfs:label": "documentationAPI",
+      "rdfs:comment": "Any other documentation corresponding to this software that is not better specified by other documentation related properties",
+      "rdfs:label": "furtherDocumentation",
       "schema:domainIncludes": {
         "@id": "NFDI4DSatZBMED:SoftwareSourceCode"
       },
