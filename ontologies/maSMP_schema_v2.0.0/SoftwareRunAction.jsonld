@@ -3,11 +3,11 @@
     "schema": "http://schema.org/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "NFDI4DSatZBMED:": "https://discovery.biothings.io/view/NFDI4DSatZBMED/"
+    "maSMP:": "https://discovery.biothings.io/view/maSMP/"
   },
   "@graph": [
     {
-      "@id": "NFDI4DSatZBMED:SoftwareRunAction",
+      "@id": "maSMP:SoftwareRunAction",
       "@type": "rdfs:Class",
       "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
       "rdfs:label": "SoftwareRunAction",
@@ -19,29 +19,29 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:softwareRun",
+      "@id": "maSMP:softwareRun",
       "@type": "rdf:Property",
       "rdfs:comment": "Software tested by this running action.",
       "rdfs:label": "softwareRun",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareRunAction"
+        "@id": "maSMP:SoftwareRunAction"
         },
       "schema:rangeIncludes": [
         {
-          "@id": "NFDI4DSatZBMED:SoftwareSourceCode"
+          "@id": "maSMP:SoftwareSourceCode"
         },
         {
-          "@id": "NFDI4DSatZBMED:SoftwareApplication"
+          "@id": "maSMP:SoftwareApplication"
         }
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:runContainer",
+      "@id": "maSMP:runContainer",
       "@type": "rdf:Property",
       "rdfs:comment": "If the running was done using a container, such container should be pointed to here.",
       "rdfs:label": "runContainer",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareRunAction"
+        "@id": "maSMP:SoftwareRunAction"
         },
       "schema:rangeIncludes": [
         {
@@ -55,7 +55,7 @@
       "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the operating system.",
       "rdfs:label": "operatingSystem",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareRunAction"
+        "@id": "maSMP:SoftwareRunAction"
         },
       "schema:rangeIncludes": [
         {
@@ -69,7 +69,7 @@
       "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the processor specification.",
       "rdfs:label": "processorRequirements",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareRunAction"
+        "@id": "maSMP:SoftwareRunAction"
         },
       "schema:rangeIncludes": [
         {
@@ -83,7 +83,7 @@
       "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the runtime platform.",
       "rdfs:label": "runtimePlatform",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareRunAction"
+        "@id": "maSMP:SoftwareRunAction"
         },
       "schema:rangeIncludes": [
         {

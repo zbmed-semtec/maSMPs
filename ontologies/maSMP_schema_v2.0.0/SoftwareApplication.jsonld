@@ -5,11 +5,11 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "bs": "https://bioschemas.org/terms/",
     "codemeta": "https://w3id.org/codemeta/",
-    "NFDI4DSatZBMED": "https://discovery.biothings.io/view/NFDI4DSatZBMED/"
+    "maSMP": "https://discovery.biothings.io/view/maSMP/"
   },
   "@graph": [
     {
-      "@id": "NFDI4DSatZBMED:SoftwareApplication",
+      "@id": "maSMP:SoftwareApplication",
       "@type": "rdfs:Class",
       "rdfs:comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). ",
       "rdfs:label": "SoftwareApplication",
@@ -21,12 +21,12 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:furtherDocumentation",
+      "@id": "maSMP:furtherDocumentation",
       "@type": "rdf:Property",
       "rdfs:comment": "Any other documentation corresponding to this software that is not better specified by other documentation related properties",
       "rdfs:label": "furtherDocumentation",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareApplication"
+        "@id": "maSMP:SoftwareApplication"
       },
       "schema:rangeIncludes": [
         {
@@ -35,12 +35,12 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:developerDocumentation",
+      "@id": "maSMP:developerDocumentation",
       "@type": "rdf:Property",
       "rdfs:comment": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
       "rdfs:label": "developerDocumentation",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareApplication"
+        "@id": "maSMP:SoftwareApplication"
       },
       "schema:rangeIncludes": [
         {
@@ -49,12 +49,12 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:userDocumentation",
+      "@id": "maSMP:userDocumentation",
       "@type": "rdf:Property",
       "rdfs:comment": "Documentation about this software directed to users who will use this software as it is.",
       "rdfs:label": "userDocumentation",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareApplication"
+        "@id": "maSMP:SoftwareApplication"
       },
       "schema:rangeIncludes": [
         {
@@ -63,12 +63,12 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:learningResource",
+      "@id": "maSMP:learningResource",
       "@type": "rdf:Property",
       "rdfs:comment": "A learning resource that provides some training on this software",
       "rdfs:label": "learningResource",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareApplication"
+        "@id": "maSMP:SoftwareApplication"
       },
       "schema:rangeIncludes": [
         {
@@ -77,16 +77,16 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:testedWith",
+      "@id": "maSMP:testedWith",
       "@type": "rdf:Property",
       "rdfs:comment": "Testing actions performed on this software",
       "rdfs:label": "testedWith",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareApplication"
+        "@id": "maSMP:SoftwareApplication"
       },
       "schema:rangeIncludes": [
         {
-          "@id": "NFDI4DSatZBMED:TestAction"
+          "@id": "maSMP:TestAction"
         }
       ]
     },
@@ -96,7 +96,7 @@
       "rdfs:comment": "Link to this software Readme file. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
       "rdfs:label": "readme",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareApplication"
+        "@id": "maSMP:SoftwareApplication"
       },
       "schema:rangeIncludes": [
         {
@@ -105,12 +105,12 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:referencePublication",
+      "@id": "maSMP:referencePublication",
       "@type": "rdf:Property",
       "rdfs:comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/). We have modified the range to [CreativeWork](https://schema.org/CreativeWork) rather than [ScholarlyArticle](https://schema.org/ScholarlyArticle) as it could be also, e.g., a [Poster](https://schema.org/Poster).",
       "rdfs:label": "referencePublication",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareApplication"
+        "@id": "maSMP:SoftwareApplication"
       },
       "schema:rangeIncludes": [
         {
@@ -124,7 +124,7 @@
       "rdfs:comment": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
       "rdfs:label": "input",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareApplication"
+        "@id": "maSMP:SoftwareApplication"
       },
       "schema:rangeIncludes": [
         {
@@ -138,7 +138,7 @@
       "rdfs:comment": "An output produced by the computational workflow (or software).",
       "rdfs:label": "output",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:SoftwareApplication"
+        "@id": "maSMP:SoftwareApplication"
       },
       "schema:rangeIncludes": [
         {

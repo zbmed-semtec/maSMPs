@@ -3,11 +3,11 @@
     "schema": "http://schema.org/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "NFDI4DSatZBMED:": "https://discovery.biothings.io/view/NFDI4DSatZBMED/"
+    "maSMP:": "https://discovery.biothings.io/view/maSMP/"
   },
   "@graph": [
     {
-      "@id": "NFDI4DSatZBMED:TestAction",
+      "@id": "maSMP:TestAction",
       "@type": "rdfs:Class",
       "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
       "rdfs:label": "TestAction",
@@ -19,12 +19,12 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:testType",
+      "@id": "maSMP:testType",
       "@type": "rdf:Property",
       "rdfs:comment": "The type of test that it is performed on the object.",
       "rdfs:label": "testType",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:TestAction"
+        "@id": "maSMP:TestAction"
         },
       "schema:rangeIncludes": [
         {
@@ -39,12 +39,12 @@
       ]
     },
     {
-      "@id": "NFDI4DSatZBMED:testInput",
+      "@id": "maSMP:testInput",
       "@type": "rdf:Property",
       "rdfs:comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.",
       "rdfs:label": "testInput",
       "schema:domainIncludes": {
-        "@id": "NFDI4DSatZBMED:TestAction"
+        "@id": "maSMP:TestAction"
         },
       "schema:rangeIncludes": [
         {
