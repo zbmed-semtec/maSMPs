@@ -1,6 +1,7 @@
 {
   "@context": {
     "schema": "http://schema.org/",
+    "bs": "https://bioschemas.org/terms/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "maSMP:": "https://discovery.biothings.io/view/maSMP/",
@@ -157,9 +158,14 @@
       "@type": "rdf:Property",
       "rdfs:comment": "Link to this software Readme file. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
       "rdfs:label": "readme",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
-      },
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
       "schema:rangeIncludes": [
         {
           "@id": "schema:URL"
@@ -372,20 +378,6 @@
       "schema:rangeIncludes": [
         {
           "@id": "maSMP:TestAction"
-        }
-      ]
-    },
-    {
-      "@id": "codemeta:readme",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Link to this software Readme file. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
-      "rdfs:label": "readme",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareApplication"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:URL"
         }
       ]
     },
