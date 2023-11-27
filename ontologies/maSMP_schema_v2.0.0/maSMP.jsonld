@@ -1,427 +1,307 @@
 {
-  "@context": {
-    "schema": "http://schema.org/",
-    "bs": "https://bioschemas.org/terms/",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "maSMP:": "https://discovery.biothings.io/view/maSMP/",
-    "@dateModified": "2023-11-27"
-  },
   "@graph": [
     {
-      "@id": "maSMP:TestAction",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
-      "rdfs:label": "TestAction",
-      "rdfs:subClassOf": {
-        "@id": "schema:Action"
-      },
-      "schemaVersion": [
-        "https://schema.org/docs/releases.html#v23.0"
-      ]
-    },
-    {
-      "@id": "maSMP:testType",
-      "@type": "rdf:Property",
-      "rdfs:comment": "The type of test that it is performed on the object.",
-      "rdfs:label": "testType",
-      "schema:domainIncludes": {
-        "@id": "maSMP:TestAction"
-        },
-      "schema:rangeIncludes": [
+      "@id": "https://bioschemas.org/terms/input",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": [
         {
-          "@id": "schema:Text"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
         },
         {
-          "@id": "schema:URL"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
+        }
+      ],
+      "http://schema.org/rangeIncludes": {
+        "@id": "https://bioschemas.org/terms/FormalParameter"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
+      "http://www.w3.org/2000/01/rdf-schema#label": "input"
+    },
+    {
+      "@id": "https://bioschemas.org/terms/output",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": [
+        {
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
         },
         {
-          "@id": "schema:DefinedTerm"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
         }
-      ]
-    },
-    {
-      "@id": "maSMP:testInput",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.",
-      "rdfs:label": "testInput",
-      "schema:domainIncludes": {
-        "@id": "maSMP:TestAction"
-        },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:Thing"
-        },
-        {
-          "@id": "schema:ListItem"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:SoftwareSourceCode",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). ",
-      "rdfs:label": "SoftwareSourceCode",
-      "rdfs:subClassOf": {
-        "@id": "schema:SoftwareSourceCode"
+      ],
+      "http://schema.org/rangeIncludes": {
+        "@id": "https://bioschemas.org/terms/FormalParameter"
       },
-      "schemaVersion": [
-        "https://schema.org/docs/releases.html#v23.0"
-      ]
-    },
-    {
-      "@id": "maSMP:furtherDocumentation",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Any other documentation corresponding to this software that is not better specified by other documentation related properties",
-      "rdfs:label": "furtherDocumentation",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:CreativeWork"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:developerDocumentation",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
-      "rdfs:label": "developerDocumentation",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:CreativeWork"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:userDocumentation",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Documentation about this software directed to users who will use this software as it is.",
-      "rdfs:label": "userDocumentation",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:CreativeWork"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:versionControlSystem",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Version control system used for this source code, to keep track of all commits, branches and so.",
-      "rdfs:label": "versionControlSystem",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:SoftwareApplication"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:learningResource",
-      "@type": "rdf:Property",
-      "rdfs:comment": "A learning resource that provides some training on this software",
-      "rdfs:label": "learningResource",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:LearningResource"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:testedWith",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Testing actions performed on this software",
-      "rdfs:label": "testedWith",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "maSMP:TestAction"
-        }
-      ]
+      "http://www.w3.org/2000/01/rdf-schema#comment": "An output produced by the computational workflow (or software).",
+      "http://www.w3.org/2000/01/rdf-schema#label": "output"
     },
     {
       "@id": "codemeta:readme",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Link to this software Readme file. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
-      "rdfs:label": "readme",
-      "schema:domainIncludes": [
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
         },
         {
-          "@id": "maSMP:SoftwareApplication"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
         }
       ],
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:URL"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:referencePublication",
-      "@type": "rdf:Property",
-      "rdfs:comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/). We have modified the range to [CreativeWork](https://schema.org/CreativeWork) rather than [ScholarlyArticle](https://schema.org/ScholarlyArticle) as it could be also, e.g., a [Poster](https://schema.org/Poster).",
-      "rdfs:label": "referencePublication",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/URL"
       },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:CreativeWork"
-        }
-      ]
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Link to this software Readme file. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
+      "http://www.w3.org/2000/01/rdf-schema#label": "readme"
     },
     {
-      "@id": "bs:input",
-      "@type": "rdf:Property",
-      "rdfs:comment": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
-      "rdfs:label": "input",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+      "@id": "http://schema.org/operatingSystem",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": {
+        "@id": "https://discovery.biothings.io/view/maSMP/SoftwareRunAction"
       },
-      "schema:rangeIncludes": [
-        {
-          "@id": "bs:FormalParameter"
-        }
-      ]
-    },
-    {
-      "@id": "bs:output",
-      "@type": "rdf:Property",
-      "rdfs:comment": "An output produced by the computational workflow (or software).",
-      "rdfs:label": "output",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/Text"
       },
-      "schema:rangeIncludes": [
-        {
-          "@id": "bs:FormalParameter"
-        }
-      ]
+      "http://www.w3.org/2000/01/rdf-schema#comment": "If the running was done by a direct execution (rather than via a container), indicate the operating system.",
+      "http://www.w3.org/2000/01/rdf-schema#label": "operatingSystem"
     },
     {
-      "@id": "maSMP:SoftwareRunAction",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
-      "rdfs:label": "SoftwareRunAction",
-      "rdfs:subClassOf": {
-        "@id": "schema:Action"
+      "@id": "http://schema.org/processorRequirements",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": {
+        "@id": "https://discovery.biothings.io/view/maSMP/SoftwareRunAction"
       },
-      "schemaVersion": [
-        "https://schema.org/docs/releases.html#v23.0"
-      ]
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "If the running was done by a direct execution (rather than via a container), indicate the processor specification.",
+      "http://www.w3.org/2000/01/rdf-schema#label": "processorRequirements"
     },
     {
-      "@id": "maSMP:softwareRun",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Software tested by this running action.",
-      "rdfs:label": "softwareRun",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareRunAction"
+      "@id": "http://schema.org/runtimePlatform",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": {
+        "@id": "https://discovery.biothings.io/view/maSMP/SoftwareRunAction"
+      },
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/Text"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "If the running was done by a direct execution (rather than via a container), indicate the runtime platform.",
+      "http://www.w3.org/2000/01/rdf-schema#label": "runtimePlatform"
+    },
+    {
+      "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). ",
+      "http://www.w3.org/2000/01/rdf-schema#label": "SoftwareApplication",
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://schema.org/SoftwareApplication"
+      }
+    },
+    {
+      "@id": "https://discovery.biothings.io/view/maSMP/SoftwareRunAction",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
+      "http://www.w3.org/2000/01/rdf-schema#label": "SoftwareRunAction",
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://schema.org/Action"
+      }
+    },
+    {
+      "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). ",
+      "http://www.w3.org/2000/01/rdf-schema#label": "SoftwareSourceCode",
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://schema.org/SoftwareSourceCode"
+      }
+    },
+    {
+      "@id": "https://discovery.biothings.io/view/maSMP/TestAction",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Class",
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
+      "http://www.w3.org/2000/01/rdf-schema#label": "TestAction",
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf": {
+        "@id": "http://schema.org/Action"
+      }
+    },
+    {
+      "@id": "https://discovery.biothings.io/view/maSMP/developerDocumentation",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": [
+        {
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
         },
-      "schema:rangeIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
+        }
+      ],
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
+      "http://www.w3.org/2000/01/rdf-schema#label": "developerDocumentation"
+    },
+    {
+      "@id": "https://discovery.biothings.io/view/maSMP/furtherDocumentation",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": [
+        {
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
         },
         {
-          "@id": "maSMP:SoftwareApplication"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
         }
-      ]
+      ],
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Any other documentation corresponding to this software that is not better specified by other documentation related properties",
+      "http://www.w3.org/2000/01/rdf-schema#label": "furtherDocumentation"
     },
     {
-      "@id": "maSMP:runContainer",
-      "@type": "rdf:Property",
-      "rdfs:comment": "If the running was done using a container, such container should be pointed to here.",
-      "rdfs:label": "runContainer",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareRunAction"
+      "@id": "https://discovery.biothings.io/view/maSMP/learningResource",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": [
+        {
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
         },
-      "schema:rangeIncludes": [
         {
-          "@id": "schema:URL"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
         }
-      ]
+      ],
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/LearningResource"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "A learning resource that provides some training on this software",
+      "http://www.w3.org/2000/01/rdf-schema#label": "learningResource"
     },
     {
-      "@id": "schema:operatingSystem",
-      "@type": "rdf:Property",
-      "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the operating system.",
-      "rdfs:label": "operatingSystem",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareRunAction"
+      "@id": "https://discovery.biothings.io/view/maSMP/referencePublication",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": [
+        {
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
         },
-      "schema:rangeIncludes": [
         {
-          "@id": "schema:Text"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
         }
-      ]
+      ],
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/). We have modified the range to [CreativeWork](https://schema.org/CreativeWork) rather than [ScholarlyArticle](https://schema.org/ScholarlyArticle) as it could be also, e.g., a [Poster](https://schema.org/Poster).",
+      "http://www.w3.org/2000/01/rdf-schema#label": "referencePublication"
     },
     {
-      "@id": "schema:processorRequirements",
-      "@type": "rdf:Property",
-      "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the processor specification.",
-      "rdfs:label": "processorRequirements",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareRunAction"
+      "@id": "https://discovery.biothings.io/view/maSMP/runContainer",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": {
+        "@id": "https://discovery.biothings.io/view/maSMP/SoftwareRunAction"
+      },
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/URL"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "If the running was done using a container, such container should be pointed to here.",
+      "http://www.w3.org/2000/01/rdf-schema#label": "runContainer"
+    },
+    {
+      "@id": "https://discovery.biothings.io/view/maSMP/softwareRun",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": {
+        "@id": "https://discovery.biothings.io/view/maSMP/SoftwareRunAction"
+      },
+      "http://schema.org/rangeIncludes": [
+        {
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
         },
-      "schema:rangeIncludes": [
         {
-          "@id": "schema:Text"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
         }
-      ]
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Software tested by this running action.",
+      "http://www.w3.org/2000/01/rdf-schema#label": "softwareRun"
     },
     {
-      "@id": "schema:runtimePlatform",
-      "@type": "rdf:Property",
-      "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the runtime platform.",
-      "rdfs:label": "runtimePlatform",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareRunAction"
+      "@id": "https://discovery.biothings.io/view/maSMP/testInput",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": {
+        "@id": "https://discovery.biothings.io/view/maSMP/TestAction"
+      },
+      "http://schema.org/rangeIncludes": [
+        {
+          "@id": "http://schema.org/Thing"
         },
-      "schema:rangeIncludes": [
         {
-          "@id": "schema:Text"
+          "@id": "http://schema.org/ListItem"
         }
-      ]
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.",
+      "http://www.w3.org/2000/01/rdf-schema#label": "testInput"
     },
     {
-      "@id": "maSMP:SoftwareApplication",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). ",
-      "rdfs:label": "SoftwareApplication",
-      "rdfs:subClassOf": {
-        "@id": "schema:SoftwareApplication"
+      "@id": "https://discovery.biothings.io/view/maSMP/testType",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": {
+        "@id": "https://discovery.biothings.io/view/maSMP/TestAction"
       },
-      "schemaVersion": [
-        "https://schema.org/docs/releases.html#v23.0"
-      ]
+      "http://schema.org/rangeIncludes": [
+        {
+          "@id": "http://schema.org/Text"
+        },
+        {
+          "@id": "http://schema.org/URL"
+        },
+        {
+          "@id": "http://schema.org/DefinedTerm"
+        }
+      ],
+      "http://www.w3.org/2000/01/rdf-schema#comment": "The type of test that it is performed on the object.",
+      "http://www.w3.org/2000/01/rdf-schema#label": "testType"
     },
     {
-      "@id": "maSMP:furtherDocumentation",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Any other documentation corresponding to this software that is not better specified by other documentation related properties",
-      "rdfs:label": "furtherDocumentation",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareApplication"
-      },
-      "schema:rangeIncludes": [
+      "@id": "https://discovery.biothings.io/view/maSMP/testedWith",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": [
         {
-          "@id": "schema:CreativeWork"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
+        },
+        {
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
         }
-      ]
+      ],
+      "http://schema.org/rangeIncludes": {
+        "@id": "https://discovery.biothings.io/view/maSMP/TestAction"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Testing actions performed on this software",
+      "http://www.w3.org/2000/01/rdf-schema#label": "testedWith"
     },
     {
-      "@id": "maSMP:developerDocumentation",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
-      "rdfs:label": "developerDocumentation",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareApplication"
-      },
-      "schema:rangeIncludes": [
+      "@id": "https://discovery.biothings.io/view/maSMP/userDocumentation",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": [
         {
-          "@id": "schema:CreativeWork"
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
+        },
+        {
+          "@id": "https://discovery.biothings.io/view/maSMP/SoftwareApplication"
         }
-      ]
+      ],
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/CreativeWork"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Documentation about this software directed to users who will use this software as it is.",
+      "http://www.w3.org/2000/01/rdf-schema#label": "userDocumentation"
     },
     {
-      "@id": "maSMP:userDocumentation",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Documentation about this software directed to users who will use this software as it is.",
-      "rdfs:label": "userDocumentation",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareApplication"
+      "@id": "https://discovery.biothings.io/view/maSMP/versionControlSystem",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://schema.org/domainIncludes": {
+        "@id": "https://discovery.biothings.io/view/maSMP/SoftwareSourceCode"
       },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:CreativeWork"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:learningResource",
-      "@type": "rdf:Property",
-      "rdfs:comment": "A learning resource that provides some training on this software",
-      "rdfs:label": "learningResource",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareApplication"
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/SoftwareApplication"
       },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:LearningResource"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:testedWith",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Testing actions performed on this software",
-      "rdfs:label": "testedWith",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareApplication"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "maSMP:TestAction"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:referencePublication",
-      "@type": "rdf:Property",
-      "rdfs:comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/). We have modified the range to [CreativeWork](https://schema.org/CreativeWork) rather than [ScholarlyArticle](https://schema.org/ScholarlyArticle) as it could be also, e.g., a [Poster](https://schema.org/Poster).",
-      "rdfs:label": "referencePublication",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareApplication"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:CreativeWork"
-        }
-      ]
-    },
-    {
-      "@id": "bs:input",
-      "@type": "rdf:Property",
-      "rdfs:comment": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
-      "rdfs:label": "input",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareApplication"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "bs:FormalParameter"
-        }
-      ]
-    },
-    {
-      "@id": "bs:output",
-      "@type": "rdf:Property",
-      "rdfs:comment": "An output produced by the computational workflow (or software).",
-      "rdfs:label": "output",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareApplication"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "bs:FormalParameter"
-        }
-      ]
+      "http://www.w3.org/2000/01/rdf-schema#comment": "Version control system used for this source code, to keep track of all commits, branches and so.",
+      "http://www.w3.org/2000/01/rdf-schema#label": "versionControlSystem"
     }
   ]
 }
