@@ -121,14 +121,14 @@
     {
       "@id": "maSMP:referencePublication",
       "@type": "rdf:Property",
-      "rdfs:comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/). We have modified the range to [CreativeWork](https://schema.org/CreativeWork) rather than [ScholarlyArticle](https://schema.org/ScholarlyArticle) as it could be also, e.g., a [Poster](https://schema.org/Poster).",
+      "rdfs:comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
       "rdfs:label": "referencePublication",
       "schema:domainIncludes": {
         "@id": "maSMP:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
-          "@id": "schema:CreativeWork"
+          "@id": "schema:ScholarlyPublication"
         }
       ]
     },
