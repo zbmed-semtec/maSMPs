@@ -21,7 +21,7 @@
     {
       "@id": "maSMP:softwareRun",
       "@type": "rdf:Property",
-      "rdfs:comment": "Software tested by this running action.",
+      "rdfs:comment": "Software executed by this running action.",
       "rdfs:label": "softwareRun",
       "schema:domainIncludes": {
         "@id": "maSMP:SoftwareRunAction"

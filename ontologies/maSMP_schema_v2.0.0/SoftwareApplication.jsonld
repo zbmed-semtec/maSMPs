@@ -79,7 +79,7 @@
     {
       "@id": "maSMP:testedWith",
       "@type": "rdf:Property",
-      "rdfs:comment": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software",
+      "rdfs:comment": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software.",
       "rdfs:label": "testedWith",
       "schema:domainIncludes": {
         "@id": "maSMP:SoftwareApplication"

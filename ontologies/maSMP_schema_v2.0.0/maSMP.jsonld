@@ -180,11 +180,11 @@
       "schema:rangeIncludes": {
         "@id": "schema:LearningResource"
       },
-      "rdfs:comment": "A learning resource that provides some training on this software",
+      "rdfs:comment": "Any [LearningResource](https://schema.org/LearningResource) that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
       "rdfs:label": "learningResource"
     },
     {
-      "@id": "maSMP:referencePublication",
+      "@id": "codemeta:referencePublication",
       "@type": "rdf:Property",
       "schema:domainIncludes": [
         {
@@ -226,7 +226,7 @@
           "@id": "maSMP:SoftwareApplication"
         }
       ],
-      "rdfs:comment": "Software tested by this running action.",
+      "rdfs:comment": "Software executed by this running action.",
       "rdfs:label": "softwareRun"
     },
     {
@@ -280,7 +280,7 @@
       "schema:rangeIncludes": {
         "@id": "maSMP:TestAction"
       },
-      "rdfs:comment": "Testing actions performed on this software",
+      "rdfs:comment": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software.",
       "rdfs:label": "testedWith"
     },
     {

@@ -79,7 +79,7 @@
     {
       "@id": "maSMP:learningResource",
       "@type": "rdf:Property",
-      "rdfs:comment": "A learning resource that provides some training on this software",
+      "rdfs:comment": "Any [LearningResource](https://schema.org/LearningResource) that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
       "rdfs:label": "learningResource",
       "schema:domainIncludes": {
         "@id": "maSMP:SoftwareSourceCode"
@@ -93,7 +93,7 @@
     {
       "@id": "maSMP:testedWith",
       "@type": "rdf:Property",
-      "rdfs:comment": "Testing actions performed on this software",
+      "rdfs:comment": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software.",
       "rdfs:label": "testedWith",
       "schema:domainIncludes": {
         "@id": "maSMP:SoftwareSourceCode"
@@ -119,7 +119,7 @@
       ]
     },
     {
-      "@id": "maSMP:referencePublication",
+      "@id": "codemeta:referencePublication",
       "@type": "rdf:Property",
       "rdfs:comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
       "rdfs:label": "referencePublication",
