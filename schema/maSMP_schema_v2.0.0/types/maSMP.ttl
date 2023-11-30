@@ -1,0 +1,154 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bioschemas.org/terms/input>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  schema:rangeIncludes <https://bioschemas.org/terms/FormalParameter> ;
+  rdfs:comment "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file)."^^xsd:string ;
+  rdfs:label "input"^^xsd:string .
+
+<maSMP:SoftwareSourceCode>
+  a rdfs:Class ;
+  rdfs:comment "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). "^^xsd:string ;
+  rdfs:label "SoftwareSourceCode"^^xsd:string ;
+  rdfs:subClassOf schema:SoftwareSourceCode .
+
+<maSMP:SoftwareApplication>
+  a rdfs:Class ;
+  rdfs:comment "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). "^^xsd:string ;
+  rdfs:label "SoftwareApplication"^^xsd:string ;
+  rdfs:subClassOf schema:SoftwareApplication .
+
+<https://bioschemas.org/terms/output>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  schema:rangeIncludes <https://bioschemas.org/terms/FormalParameter> ;
+  rdfs:comment "An output produced by the computational workflow (or software)."^^xsd:string ;
+  rdfs:label "output"^^xsd:string .
+
+<https://w3id.org/codemeta/readme>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  schema:rangeIncludes schema:URL ;
+  rdfs:comment "Link to this software Readme file. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/)."^^xsd:string ;
+  rdfs:label "readme"^^xsd:string .
+
+schema:operatingSystem
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareRunAction> ;
+  schema:rangeIncludes schema:Text ;
+  rdfs:comment "If the running was done by a direct execution (rather than via a container), indicate the operating system."^^xsd:string ;
+  rdfs:label "operatingSystem"^^xsd:string .
+
+<maSMP:SoftwareRunAction>
+  a rdfs:Class ;
+  rdfs:comment "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result)."^^xsd:string ;
+  rdfs:label "SoftwareRunAction"^^xsd:string ;
+  rdfs:subClassOf schema:Action .
+
+schema:processorRequirements
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareRunAction> ;
+  schema:rangeIncludes schema:Text ;
+  rdfs:comment "If the running was done by a direct execution (rather than via a container), indicate the processor specification."^^xsd:string ;
+  rdfs:label "processorRequirements"^^xsd:string .
+
+schema:runtimePlatform
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareRunAction> ;
+  schema:rangeIncludes schema:Text ;
+  rdfs:comment "If the running was done by a direct execution (rather than via a container), indicate the runtime platform."^^xsd:string ;
+  rdfs:label "runtimePlatform"^^xsd:string .
+
+<maSMP:TestAction>
+  a rdfs:Class ;
+  rdfs:comment "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result)."^^xsd:string ;
+  rdfs:label "TestAction"^^xsd:string ;
+  rdfs:subClassOf schema:Action .
+
+<maSMP:developerDocumentation>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  schema:rangeIncludes schema:CreativeWork ;
+  rdfs:comment "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software"^^xsd:string ;
+  rdfs:label "developerDocumentation"^^xsd:string .
+
+<maSMP:furtherDocumentation>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  schema:rangeIncludes schema:CreativeWork ;
+  rdfs:comment "Any other documentation corresponding to this software that is not better specified by other documentation related properties"^^xsd:string ;
+  rdfs:label "furtherDocumentation"^^xsd:string .
+
+<maSMP:learningResource>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  schema:rangeIncludes schema:LearningResource ;
+  rdfs:comment "Any [LearningResource](https://schema.org/LearningResource) that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software."^^xsd:string ;
+  rdfs:label "learningResource"^^xsd:string .
+
+<https://w3id.org/codemeta/referencePublication>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  schema:rangeIncludes schema:ScholarlyArticle ;
+  rdfs:comment "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/)."^^xsd:string ;
+  rdfs:label "referencePublication"^^xsd:string .
+
+<maSMP:runContainer>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareRunAction> ;
+  schema:rangeIncludes schema:URL ;
+  rdfs:comment "If the running was done using a container, such container should be pointed to here."^^xsd:string ;
+  rdfs:label "runContainer"^^xsd:string .
+
+<maSMP:softwareRun>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareRunAction> ;
+  schema:rangeIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  rdfs:comment "Software executed by this running action."^^xsd:string ;
+  rdfs:label "softwareRun"^^xsd:string .
+
+<maSMP:softwareTested>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:TestAction> ;
+  schema:rangeIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:comment "Link to the software tested by this action."^^xsd:string ;
+  rdfs:label "softwareTested"^^xsd:string .
+
+<maSMP:testInput>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:TestAction> ;
+  schema:rangeIncludes schema:Thing, schema:ListItem ;
+  rdfs:comment "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help."^^xsd:string ;
+  rdfs:label "testInput"^^xsd:string .
+
+<maSMP:testType>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:TestAction> ;
+  schema:rangeIncludes schema:Text, schema:URL, schema:DefinedTerm ;
+  rdfs:comment "The type of test that it is performed on the object."^^xsd:string ;
+  rdfs:label "testType"^^xsd:string .
+
+<maSMP:testedWith>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  schema:rangeIncludes <maSMP:TestAction> ;
+  rdfs:comment "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software."^^xsd:string ;
+  rdfs:label "testedWith"^^xsd:string .
+
+<maSMP:userDocumentation>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode>, <maSMP:SoftwareApplication> ;
+  schema:rangeIncludes schema:CreativeWork ;
+  rdfs:comment "Documentation about this software directed to users who will use this software as it is."^^xsd:string ;
+  rdfs:label "userDocumentation"^^xsd:string .
+
+<maSMP:versionControlSystem>
+  a rdf:Property ;
+  schema:domainIncludes <maSMP:SoftwareSourceCode> ;
+  schema:rangeIncludes schema:SoftwareApplication ;
+  rdfs:comment "Version control system used for this source code, to keep track of all commits, branches and so."^^xsd:string ;
+  rdfs:label "versionControlSystem"^^xsd:string .
