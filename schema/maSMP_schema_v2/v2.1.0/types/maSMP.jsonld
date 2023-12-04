@@ -102,7 +102,10 @@
       "rdfs:label": "SoftwareApplication",
       "rdfs:subClassOf": {
         "@id": "schema:SoftwareApplication"
-      }
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "maSMP:SoftwareRunAction",
@@ -111,7 +114,10 @@
       "rdfs:label": "SoftwareRunAction",
       "rdfs:subClassOf": {
         "@id": "schema:Action"
-      }
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "maSMP:SoftwareSourceCode",
@@ -120,7 +126,10 @@
       "rdfs:label": "SoftwareSourceCode",
       "rdfs:subClassOf": {
         "@id": "schema:SoftwareSourceCode"
-      }
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "maSMP:SoftwareTestAction",
@@ -129,7 +138,10 @@
       "rdfs:label": "SoftwareTestAction",
       "rdfs:subClassOf": {
         "@id": "schema:Action"
-      }
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "maSMP:developerDocumentation",
