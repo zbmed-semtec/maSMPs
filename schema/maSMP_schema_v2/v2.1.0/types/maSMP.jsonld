@@ -9,13 +9,6 @@
   },
   "@graph": [
     {
-      "@id" : "https://discovery.biothings.io/view/maSMP/",
-      "@type" : "http://www.w3.org/2002/07/owl#Ontology",
-      "http://purl.org/dc/terms/created" : "2023-12-04",
-      "rdfs:label": "maSMP metadata schema",
-      "rdfs:comment" : "2.0.0"
-    },
-    {
       "@id": "bs:input",
       "@type": "rdf:Property",
       "schema:domainIncludes": [
