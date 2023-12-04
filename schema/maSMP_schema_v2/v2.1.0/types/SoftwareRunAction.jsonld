@@ -28,7 +28,7 @@
         },
       "schema:rangeIncludes": [
         {
-          "@id": "Thing"
+          "@id": "schema:Thing"
         }
       ]
     },
