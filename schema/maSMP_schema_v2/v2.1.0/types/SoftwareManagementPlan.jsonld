@@ -23,7 +23,9 @@
       "@type": "rdf:Property",
       "rdfs:comment": "SoftwareSourceCode handled by this software mng plan. Software applications, tools and releases from the source code should be linked directly to the source code.",
       "rdfs:label": "managedSoftware",
-      "schema:domainIncludes": "maSMP:SoftwareManagementPlan",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareManagementPlan"
+      },
       "schema:rangeIncludes": [
         {
           "@id": "maSMP:SoftwareSourceCode"

@@ -23,7 +23,9 @@
       "@type": "rdf:Property",
       "rdfs:comment": "Link to the research project this mng plan belongs to",
       "rdfs:label": "researchProject",
-      "schema:domainIncludes": "maSMP:OutputManagementPlan",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
       "schema:rangeIncludes": [
         {
           "@id": "schema:ResearchProject"
@@ -35,7 +37,9 @@
       "@type": "rdf:Property",
       "rdfs:comment": "Considerations wrt ethical, legal and social aspects",
       "rdfs:label": "ethicalLegalSocial",
-      "schema:domainIncludes": "maSMP:OutputManagementPlan",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
       "schema:rangeIncludes": [
         {
           "@id": "schema:Text"
@@ -47,7 +51,9 @@
       "@type": "rdf:Property",
       "rdfs:comment": "Link to other management plans associated to this one, e.g., an SMP associated to the DMP on the datasets used by the software",
       "rdfs:label": "relatedMngPlans",
-      "schema:domainIncludes": "maSMP:OutputManagementPlan",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
       "schema:rangeIncludes": [
         {
           "@id": "OutputManagementPlan"
@@ -59,7 +65,9 @@
       "@type": "rdf:Property",
       "rdfs:comment": "Questions asked in this management plan. If the order is important [ItemList](https://schema.org/ItemList) can be used, otherwise an array of [Question](https://schema.org/Question) would work.",
       "rdfs:label": "questionnaire",
-      "schema:domainIncludes": "maSMP:OutputManagementPlan",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
       "schema:rangeIncludes": [
         {
           "@id": "schema:Question"
