@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "maSMP:": "https://discovery.biothings.io/view/maSMP/"
+  },
+  "@graph": [
+    {
+      "@id": "maSMP:SoftwareTestAction",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The act of testing a software according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
+      "rdfs:label": "SoftwareTestAction",
+      "rdfs:subClassOf": {
+        "@id": "schema:Action"
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    },
+    {
+      "@id": "maSMP:softwareTested",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to the software tested by this action.",
+      "rdfs:label": "softwareTested",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareTestAction"
+        },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:testType",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The type of test that it is performed on the object.",
+      "rdfs:label": "testType",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareTestAction"
+        },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:testInput",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.",
+      "rdfs:label": "testInput",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareTestAction"
+        },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Thing"
+        },
+        {
+          "@id": "schema:ListItem"
+        }
+      ]
+    }
+  ]
+}
