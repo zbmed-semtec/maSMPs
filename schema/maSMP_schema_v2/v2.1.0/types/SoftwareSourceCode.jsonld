@@ -128,7 +128,7 @@
       },
       "schema:rangeIncludes": [
         {
-          "@id": "schema:ScholarlyPublication"
+          "@id": "schema:ScholarlyArticle"
         }
       ]
     },
