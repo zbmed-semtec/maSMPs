@@ -220,7 +220,7 @@
       ],
       "schema:rangeIncludes": [
         {
-          "@id": "Text"
+          "@id": "schema:Text"
         }
       ]
     },
@@ -236,7 +236,7 @@
       ],
       "schema:rangeIncludes": [
         {
-          "@id": "Text"
+          "@id": "schema:Text"
         },
         {
           "@id": "schema:URL"
@@ -255,7 +255,7 @@
       ],
       "schema:rangeIncludes": [
         {
-          "@id": "Text"
+          "@id": "schema:Text"
         },
         {
           "@id": "schema:URL"
@@ -274,7 +274,7 @@
       ],
       "schema:rangeIncludes": [
         {
-          "@id": "Text"
+          "@id": "schema:Text"
         },
         {
           "@id": "schema:URL"
