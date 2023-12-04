@@ -72,7 +72,7 @@
       },
       "schema:rangeIncludes": [
         {
-          "@id": "maSMP:TestAction"
+          "@id": "maSMP:SoftwareTestAction"
         }
       ]
     },
