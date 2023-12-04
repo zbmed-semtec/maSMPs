@@ -473,25 +473,6 @@
           "@id": "schema:URL"
         }
       ]
-    },
-    {
-      "@id": "codemeta:referencePublication",
-      "@type": "rdf:Property",
-      "rdfs:comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
-      "rdfs:label": "referencePublication",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareApplication"
-        },
-        {
-          "@id": "maSMP:SoftwareSoftwareSourceCode"
-        }
-      ],
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:ScholarlyArticle"
-        }
-      ]
     }
   ]
 }
