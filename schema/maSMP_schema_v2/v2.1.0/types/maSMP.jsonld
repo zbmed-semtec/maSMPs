@@ -348,7 +348,7 @@
       ],
       "schema:rangeIncludes": [
         {
-          "@id": "URL"
+          "@id": "schema:URL"
         }
       ]
     },
@@ -367,7 +367,7 @@
       ],
       "schema:rangeIncludes": [
         {
-          "@id": "URL"
+          "@id": "schema:URL"
         }
       ]
     },
@@ -386,7 +386,7 @@
       ],
       "schema:rangeIncludes": [
         {
-          "@id": "URL"
+          "@id": "schema:URL"
         }
       ]
     },
@@ -427,7 +427,7 @@
           "@id": "Text"
         },
         {
-          "@id": "URL"
+          "@id": "schema:URL"
         }
       ]
     },
@@ -449,7 +449,7 @@
           "@id": "Text"
         },
         {
-          "@id": "URL"
+          "@id": "schema:URL"
         }
       ]
     },
@@ -471,7 +471,7 @@
           "@id": "Text"
         },
         {
-          "@id": "URL"
+          "@id": "schema:URL"
         }
       ]
     }
