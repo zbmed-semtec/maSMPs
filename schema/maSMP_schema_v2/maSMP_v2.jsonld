@@ -102,7 +102,10 @@
       "rdfs:label": "SoftwareApplication",
       "rdfs:subClassOf": {
         "@id": "schema:SoftwareApplication"
-      }
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "maSMP:SoftwareRunAction",
@@ -111,7 +114,10 @@
       "rdfs:label": "SoftwareRunAction",
       "rdfs:subClassOf": {
         "@id": "schema:Action"
-      }
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "maSMP:SoftwareSourceCode",
@@ -120,7 +126,10 @@
       "rdfs:label": "SoftwareSourceCode",
       "rdfs:subClassOf": {
         "@id": "schema:SoftwareSourceCode"
-      }
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "maSMP:SoftwareTestAction",
@@ -129,7 +138,10 @@
       "rdfs:label": "SoftwareTestAction",
       "rdfs:subClassOf": {
         "@id": "schema:Action"
-      }
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "maSMP:developerDocumentation",
@@ -464,6 +476,102 @@
         },
         {
           "@id": "schema:URL"
+        }
+      ]
+    },{
+      "@id": "maSMP:OutputManagementPlan",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Management plans (e.g., data, software, other research output/outcomes/artifacts) are a tool for researchers and research stewards to organize and plan around research artifacts, from initial ideas to publication. This type builds on top of [DataCite Metadata Schema 4.4](https://schema.datacite.org/meta/kernel-4.4/) and maps it mandatory elements to schema.org to represent research artifact management plans. This type could be extended to cover particularities wrt management plans for specific research outcomes, e.g., data management plans or software management plans.",
+      "rdfs:label": "OutputManagementPlan",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    },
+    {
+      "@id": "maSMP:researchProject",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to the research project this mng plan belongs to",
+      "rdfs:label": "researchProject",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:ResearchProject"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:ethicalLegalSocial",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Considerations wrt ethical, legal and social aspects",
+      "rdfs:label": "ethicalLegalSocial",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:relatedMngPlans",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to other management plans associated to this one, e.g., an SMP associated to the DMP on the datasets used by the software",
+      "rdfs:label": "relatedMngPlans",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "maSMP:OutputManagementPlan"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:questionnaire",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Questions asked in this management plan. If the order is important [ItemList](https://schema.org/ItemList) can be used, otherwise an array of [Question](https://schema.org/Question) would work.",
+      "rdfs:label": "questionnaire",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Question"
+        },
+        {
+          "@id": "schema:ItemList"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:SoftwareManagementPlan",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Software Management plan.",
+      "rdfs:label": "SoftwareManagementPlan",
+      "rdfs:subClassOf": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    },
+    {
+      "@id": "maSMP:managedSoftware",
+      "@type": "rdf:Property",
+      "rdfs:comment": "SoftwareSourceCode handled by this software mng plan. Software applications, tools and releases from the source code should be linked directly to the source code.",
+      "rdfs:label": "managedSoftware",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
         }
       ]
     }
