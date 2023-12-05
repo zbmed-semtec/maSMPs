@@ -56,7 +56,7 @@
       },
       "schema:rangeIncludes": [
         {
-          "@id": "OutputManagementPlan"
+          "@id": "maSMP:OutputManagementPlan"
         }
       ]
     },
