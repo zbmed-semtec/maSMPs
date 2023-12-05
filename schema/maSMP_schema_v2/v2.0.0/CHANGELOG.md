@@ -1,4 +1,4 @@
-# maSMP metadata schema vr 2
+# maSMP metadata schema vr 2.0.0
 
 In this new verson of the maSMP metadata schema we:
 * Move from an ontology in OWL (not really compatible with [schema.org](htpps://schema.org)) to a medatadata schema using [DDE](https://discovery.biothings.io/) to edit our schemas as it is fully compatible with [schema.org](htpps://schema.org).
