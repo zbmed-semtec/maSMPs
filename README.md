@@ -8,7 +8,7 @@ This project corresponds to an extension of the Research Data Alliance (RDA) [ma
 
 Our maSMP metadata schema has been updated thanks to crosswalks and discussions at hackathons organized by the SemTec team at ZB MED
 * [Workshop machine-actionable Software Management Plans](https://doi.org/10.5281/zenodo.8087357) 2023.05.31 - alignment to [Bioschemas ComputationalTool](https://bioschemas.org/profiles/ComputationalTool/), [CodeMeta terms](https://codemeta.github.io/terms/), Max Plank Digital Library SMP, [ELIXIR SMPs](https://doi.org/10.37044/osf.io/k8znb) and [eScience Centre SMP guideline](https://zenodo.org/record/7248877#.Y4XeHXaZOUk)
-* [NFDI4DS hackathon on maSMPs](#) 2023.11.28 to 2023-12-01 - alignment to Max Plank Digital Library SMP, [ELIXIR SMPs](https://doi.org/10.37044/osf.io/k8znb), and [DataCite Metadata Schema 4.4 - OutputManagementPlan](https://doi.org/10.14454/3w3z-sa82)
+* [NFDI4DS hackathon on maSMPs](#) 2023.11.28 to 2023-12-01 - alignment to Max Plank Digital Library SMP, [ELIXIR SMPs](https://doi.org/10.37044/osf.io/k8znb), [SOMEF](https://github.com/KnowledgeCaptureAndDiscovery/somef) and [DataCite Metadata Schema 4.4 - OutputManagementPlan](https://doi.org/10.14454/3w3z-sa82)
 
 The current version of our maSMP has been created with the [Data Discovery Engine (DDE)](https://discovery.biothings.io/).
 
