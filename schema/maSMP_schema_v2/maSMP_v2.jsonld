@@ -395,10 +395,10 @@
       ]
     },
     {
-      "@id": "maSMP:intededUse",
+      "@id": "maSMP:intendedUse",
       "@type": "rdf:Property",
       "rdfs:comment": "Purpose and intended use of this software.",
-      "rdfs:label": "intededUse",
+      "rdfs:label": "intendedUse",
       "schema:domainIncludes": [
         {
           "@id": "maSMP:SoftwareApplication"
