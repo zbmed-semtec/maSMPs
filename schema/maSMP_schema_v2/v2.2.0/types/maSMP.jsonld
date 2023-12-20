@@ -535,7 +535,7 @@
     {
       "@id": "maSMP:questionnaire",
       "@type": "rdf:Property",
-      "rdfs:comment": "Questions asked in this management plan. If the order is important <a href='https://schema.org/ItemList' target='_blank'>ItemList</a> can be used, otherwise an array of <a href='https://schema.org/Question' target='_blank'>Question</a> would work.",
+      "rdfs:comment": "Questions asked in this management plan. If the order is important <a href='https://schema.org/ItemList' target='_blank'>ItemList</a> can be used, otherwise an array of <a href='https://discovery.biothings.io/view/maSMP/Question' target='_blank'>Question</a> would work.",
       "rdfs:label": "questionnaire",
       "schema:domainIncludes": {
         "@id": "maSMP:OutputManagementPlan"

@@ -9,7 +9,7 @@
     {
       "@id": "maSMP:OutputManagementPlan",
       "@type": "rdfs:Class",
-      "rdfs:comment": "Management plans (e.g., data, software, other research output/outcomes/artifacts) are a tool for researchers and research stewards to organize and plan around research artifacts, from initial ideas to publication. This type builds on top of [DataCite Metadata Schema 4.4](https://schema.datacite.org/meta/kernel-4.4/) and maps it mandatory elements to schema.org to represent research artifact management plans. This type could be extended to cover particularities wrt management plans for specific research outcomes, e.g., data management plans or software management plans.",
+      "rdfs:comment": "Management plans (e.g., data, software, other research output/outcomes/artifacts) are a tool for researchers and research stewards to organize and plan around research artifacts, from initial ideas to publication. This type builds on top of <a href='https://schema.datacite.org/meta/kernel-4.4/' target='_blank'>DataCite Metadata Schema 4.4</a> and maps it mandatory elements to schema.org to represent research artifact management plans. This type could be extended to cover particularities wrt management plans for specific research outcomes, e.g., data management plans or software management plans.",
       "rdfs:label": "OutputManagementPlan",
       "rdfs:subClassOf": {
         "@id": "schema:CreativeWork"
@@ -63,7 +63,7 @@
     {
       "@id": "maSMP:questionnaire",
       "@type": "rdf:Property",
-      "rdfs:comment": "Questions asked in this management plan. If the order is important [ItemList](https://schema.org/ItemList) can be used, otherwise an array of [Question](https://schema.org/Question) would work.",
+      "rdfs:comment": "Questions asked in this management plan. If the order is important <a href='https://schema.org/ItemList' target='_blank'>ItemList</a> can be used, otherwise an array of <a href='https://discovery.biothings.io/view/maSMP/Question' target='_blank'>Question</a> would work.",
       "rdfs:label": "questionnaire",
       "schema:domainIncludes": {
         "@id": "maSMP:OutputManagementPlan"

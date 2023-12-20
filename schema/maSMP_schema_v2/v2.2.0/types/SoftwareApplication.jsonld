@@ -11,7 +11,7 @@
     {
       "@id": "maSMP:SoftwareApplication",
       "@type": "rdfs:Class",
-      "rdfs:comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). ",
+      "rdfs:comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>mapped via crosswalks to other SMPs</a>. ",
       "rdfs:label": "SoftwareApplication",
       "rdfs:subClassOf": {
         "@id": "schema:SoftwareApplication"
@@ -51,7 +51,7 @@
     {
       "@id": "maSMP:learningResource",
       "@type": "rdf:Property",
-      "rdfs:comment": "Any [LearningResource](https://schema.org/LearningResource) that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
+      "rdfs:comment": "Any <a href='https://schema.org/LearningResource' target='_blank'>LearningResource</a> that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
       "rdfs:label": "learningResource",
       "schema:domainIncludes": {
         "@id": "maSMP:SoftwareApplication"
@@ -79,7 +79,7 @@
     {
       "@id": "codemeta:readme",
       "@type": "rdf:Property",
-      "rdfs:comment": "Link to this software Readme file. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
+      "rdfs:comment": "Link to this software Readme file. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
       "rdfs:label": "readme",
       "schema:domainIncludes": {
         "@id": "maSMP:SoftwareApplication"
@@ -93,7 +93,7 @@
     {
       "@id": "codemeta:referencePublication",
       "@type": "rdf:Property",
-      "rdfs:comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
+      "rdfs:comment": "An academic publication related to the software. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
       "rdfs:label": "referencePublication",
       "schema:domainIncludes": {
         "@id": "maSMP:SoftwareApplication"
