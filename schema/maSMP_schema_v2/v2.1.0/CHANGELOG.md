@@ -13,3 +13,5 @@ In this new version of the maSMP metadata schema we added the following properti
 | maSMP:softwareTested       | Link to the software tested by this action              | SofwareSourceCode or SoftwareApplication |
 
 And also added two new types maSMP:OutputManagementPlan and maSMP:SoftwareManagementPlan
+
+[Crosswalks supporting this version](https://doi.org/10.5281/zenodo.10275895) are publicly available.
