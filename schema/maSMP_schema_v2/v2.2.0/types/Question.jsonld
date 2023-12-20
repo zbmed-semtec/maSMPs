@@ -28,7 +28,7 @@
           },
           "schema:rangeIncludes": [
              {
-                  "@id": "rdfs:Statement"
+                  "@id": "rdf:Statement"
              },
              {
                   "@id": "schema:DefinedTerm"
