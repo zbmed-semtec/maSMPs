@@ -1,6 +1,6 @@
 # maSMP metadata schema vr 2.1.0
 
-In this new verson of the maSMP metadata schema we added the following properties
+In this new version of the maSMP metadata schema we added the following properties
 | Property                   | Description                                             | Range                                    |
 |----------------------------|---------------------------------------------------------|------------------------------------------|
 | codemeta:buildInstructions | Link to installation instructions/documentation         | Text or URL                              |

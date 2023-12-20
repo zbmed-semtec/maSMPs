@@ -1,6 +1,6 @@
 # maSMP metadata schema vr 2.0.0
 
-In this new verson of the maSMP metadata schema we:
+In this new version of the maSMP metadata schema we:
 * Move from an ontology in OWL (not really compatible with [schema.org](htpps://schema.org)) to a medatadata schema using [DDE](https://discovery.biothings.io/) to edit our schemas as it is fully compatible with [schema.org](htpps://schema.org).
 * The use of [DDE](https://discovery.biothings.io/) will also ease the integration to [Bioschemas][https.//bioschemas.org] as it is also used there.
 * Schemas are now available for exploration in the [NFDI4DS at ZB MED namespace in DDE](https://discovery.biothings.io/ns/NFDI4DSatZBMED).
