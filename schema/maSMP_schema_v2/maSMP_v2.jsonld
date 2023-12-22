@@ -56,7 +56,7 @@
       "schema:rangeIncludes": {
         "@id": "schema:URL"
       },
-      "rdfs:comment": "Link to this software Readme file. Property defined in the <a href='https://codemeta.github.io/terms/ target='_blank'>Codemeta terms</a>.",
+      "rdfs:comment": "Link to this software Readme file. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
       "rdfs:label": "readme"
     },
     {
@@ -98,7 +98,7 @@
     {
       "@id": "maSMP:SoftwareApplication",
       "@type": "rdfs:Class",
-      "rdfs:comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>mapped via crosswalks to other SMPs</a>. ",
+      "rdfs:comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been mapped via crosswalks to other SMPs <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>here</a> and <a href='https://doi.org/10.5281/zenodo.10275895' target='_blank'>here</a>. ",
       "rdfs:label": "SoftwareApplication",
       "rdfs:subClassOf": {
         "@id": "schema:SoftwareApplication"
@@ -122,7 +122,7 @@
     {
       "@id": "maSMP:SoftwareSourceCode",
       "@type": "rdfs:Class",
-      "rdfs:comment": "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>mapped via crosswalks to other SMPs</a>. ",
+      "rdfs:comment": "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been mapped via crosswalks to other SMPs <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>here</a> and <a href='https://doi.org/10.5281/zenodo.10275895' target='_blank'>here</a>. ",
       "rdfs:label": "SoftwareSourceCode",
       "rdfs:subClassOf": {
         "@id": "schema:SoftwareSourceCode"
@@ -481,7 +481,7 @@
     },{
       "@id": "maSMP:OutputManagementPlan",
       "@type": "rdfs:Class",
-      "rdfs:comment": "Management plans (e.g., data, software, other research output/outcomes/artifacts) are a tool for researchers and research stewards to organize and plan around research artifacts, from initial ideas to publication. This type builds on top of <a href='https://schema.datacite.org/meta/kernel-4.4/' target=''>DataCite Metadata Schema 4.4</a> and maps it mandatory elements to schema.org to represent research artifact management plans. This type could be extended to cover particularities wrt management plans for specific research outcomes, e.g., data management plans or software management plans.",
+      "rdfs:comment": "Management plans (e.g., data, software, other research output/outcomes/artifacts) are a tool for researchers and research stewards to organize and plan around research artifacts, from initial ideas to publication. This type builds on top of <a href='https://schema.datacite.org/meta/kernel-4.4/' target='_blank'>DataCite Metadata Schema 4.4</a> and maps it mandatory elements to schema.org to represent research artifact management plans. This type could be extended to cover particularities wrt management plans for specific research outcomes, e.g., data management plans or software management plans.",
       "rdfs:label": "OutputManagementPlan",
       "rdfs:subClassOf": {
         "@id": "schema:CreativeWork"
@@ -535,14 +535,14 @@
     {
       "@id": "maSMP:questionnaire",
       "@type": "rdf:Property",
-      "rdfs:comment": "Questions asked in this management plan. If the order is important <a href='https://schema.org/ItemList' target='_blank'>ItemList</a> can be used, otherwise an array of <a href='https://discovery.biothings.io/view/maSMP/Question' target='_blank'>Question</a> would work.",
+      "rdfs:comment": "Questions asked in this management plan. If the order is important <a href='https://schema.org/ItemList' target='_blank'>ItemList</a> can be used, otherwise an array of <a href='https://schema.org/Question' target='_blank'>Question</a> would work.",
       "rdfs:label": "questionnaire",
       "schema:domainIncludes": {
         "@id": "maSMP:OutputManagementPlan"
       },
       "schema:rangeIncludes": [
         {
-          "@id": "maSMP:Question"
+          "@id": "schema:Question"
         },
         {
           "@id": "schema:ItemList"
@@ -574,38 +574,6 @@
           "@id": "maSMP:SoftwareSourceCode"
         }
       ]
-    },
-    {
-      "@id": "maSMP:Question",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A specific question - e.g. from a user seeking answers online, or collected in e.g., a Frequently Asked Questions (FAQ) document, survey or management plan.",
-      "rdfs:label": "Question",
-      "rdfs:subClassOf": {
-          "@id": "schema:Question"
-      },
-      "schemaVersion": [
-          "https://schema.org/docs/releases.html#v23.0"
-      ]
-  },
- {
-      "@id": "maSMP:expectedMetadata",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Metadata statement (domain, property and range) or property (if the domain and range are irrelevant) associated to this question. It does not necessarily provide a direct answer to the question but it would be related to it. In the case of mng plans, such a metadata term is expected to exist by the end of the mng plan. ",
-      "rdfs:label": "expectedMetadata",
-      "schema:domainIncludes": {
-        "@id": "maSMP:Question"
-      },
-      "schema:rangeIncludes": [
-         {
-              "@id": "rdf:Statement"
-         },
-         {
-              "@id": "schema:DefinedTerm"
-         },
-         {
-              "@id": "schema:PropertyValue"
-         }
-      ]
-  }
+    }
   ]
 }
