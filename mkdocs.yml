@@ -5,7 +5,6 @@ nav:
     - 'maSMP_Schema.md'
     - Types:
       - 'Types/OutputManagementPlan.md'
-      - 'Types/Question.md'
       - 'Types/SoftwareManagementPlan.md'
       - 'Types/SoftwareSourceCode.md'
       - 'Types/SoftwareApplication.md'
