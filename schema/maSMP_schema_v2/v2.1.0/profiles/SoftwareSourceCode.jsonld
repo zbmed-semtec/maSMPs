@@ -1,0 +1,230 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sourcecode": "https://discovery.biothings.io/view/sourcecode/"
+  },
+  "@graph": [
+    {
+      "@id": "sourcecode:SoftwareSourceCode",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case",
+      "rdfs:label": "SoftwareSourceCode",
+      "rdfs:subClassOf": {
+        "@id": "maSMP:SoftwareSourceCode"
+      },
+      "$validation": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "input": {
+            "description": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
+            "owl:cardinality": "many"
+          },
+          "output": {
+            "description": "An output produced by the computational workflow (or software).",
+            "owl:cardinality": "many"
+          },
+          "readme": {
+            "description": "Link to this software Readme file. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
+            "owl:cardinality": "one"
+          },
+          "developerDocumentation": {
+            "description": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
+            "owl:cardinality": "many"
+          },
+          "learningResource": {
+            "description": "Any <a href='https://schema.org/LearningResource' target='_blank'>LearningResource</a> that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
+            "owl:cardinality": "many"
+          },
+          "referencePublication": {
+            "description": "An academic publication related to the software. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
+            "owl:cardinality": "one"
+          },
+          "testedWith": {
+            "description": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software.",
+            "owl:cardinality": "many"
+          },
+          "userDocumentation": {
+            "description": "Documentation about this software directed to users who will use this software as it is.",
+            "owl:cardinality": "many"
+          },
+          "versionControlSystem": {
+            "description": "Version control system used for this source code, to keep track of all commits, branches and so.",
+            "owl:cardinality": "one"
+          },
+          "buildInstructions": {
+            "description": "Link to installation instructions/documentation.",
+            "owl:cardinality": "one"
+          },
+          "issueTracker": {
+            "description": "Link to software bug reporting or issue tracking system.",
+            "owl:cardinality": "one"
+          },
+          "changelog": {
+            "description": "Link to CHANGELOG file.",
+            "owl:cardinality": "one"
+          },
+          "intendedUse": {
+            "description": "Purpose and intended use of this software.",
+            "owl:cardinality": "one"
+          },
+          "deployInstructions": {
+            "description": "Text or link to deployment instructions/documentation.",
+            "owl:cardinality": "many"
+          },
+          "installInstructions": {
+            "description": "Text or link to installation instructions/documentation. It should not be confused with the installUrl which points to a place where the installation package (e.g., .exe) can be found.",
+            "owl:cardinality": "many"
+          },
+          "testInstructions": {
+            "description": "Text or link to testing instructions/documentation.",
+            "owl:cardinality": "many"
+          },
+          "codeRepository": {
+            "description": "Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex).",
+            "owl:cardinality": "one"
+          },
+          "codeSampleType": {
+            "description": "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template.",
+            "owl:cardinality": "many"
+          },
+          "programmingLanguage": {
+            "description": "The computer programming language.",
+            "owl:cardinality": "many"
+          },
+          "runtimePlatform": {
+            "description": "Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0).",
+            "owl:cardinality": "many"
+          },
+          "targetProduct": {
+            "description": "Target Operating System / Product to which the code applies.  If applies to several versions, just the product name can be used.",
+            "owl:cardinality": "many"
+          },
+          "archivedAt": {
+            "description": "Indicates a page or other link involved in archival of a [[CreativeWork]]. In the case of [[MediaReview]], the items in a [[MediaReviewItem]] may often become inaccessible, but be archived by archival, journalistic, activist, or law enforcement organizations. In such cases, the referenced page may not directly publish the content.",
+            "owl:cardinality": "many"
+          },
+          "author": {
+            "description": "The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.",
+            "owl:cardinality": "many"
+          },
+          "citation": {
+            "description": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
+            "owl:cardinality": "many"
+          },
+          "conditionsOfAccess": {
+            "description": "Conditions that affect the availability of, or method(s) of access to, an item. Typically used for real world items such as an [[ArchiveComponent]] held by an [[ArchiveOrganization]]. This property is not suitable for use as a general Web access control mechanism. It is expressed only in natural language.\\n\\nFor example \"Available by appointment from the Reading Room\" or \"Accessible only from logged-in accounts \". ",
+            "owl:cardinality": "many"
+          },
+          "contributor": {
+            "description": "A secondary contributor to the CreativeWork or Event.",
+            "owl:cardinality": "many"
+          },
+          "copyrightHolder": {
+            "description": "The party holding the legal copyright to the CreativeWork.",
+            "owl:cardinality": "many"
+          },
+          "dateModified": {
+            "description": "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.",
+            "owl:cardinality": "one"
+          },
+          "datePublished": {
+            "description": "Date of first broadcast/publication.",
+            "owl:cardinality": "one"
+          },
+          "discussionUrl": {
+            "description": "A link to the page containing the comments of the CreativeWork.",
+            "owl:cardinality": "many"
+          },
+          "isAccessibleForFree": {
+            "description": "A flag to signal that the item, event, or place is accessible for free.",
+            "owl:cardinality": "one"
+          },
+          "keywords": {
+            "description": "Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.",
+            "owl:cardinality": "many"
+          },
+          "license": {
+            "description": "A license document that applies to this content, typically indicated by URL.",
+            "owl:cardinality": "one"
+          },
+          "maintainer": {
+            "description": "A maintainer of a [[Dataset]], software package ([[SoftwareApplication]]), or other [[Project]]. A maintainer is a [[Person]] or [[Organization]] that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on \"upstream\" sources. When [[maintainer]] is applied to a specific version of something e.g. a particular version or packaging of a [[Dataset]], it is always  possible that the upstream source has a different maintainer. The [[isBasedOn]] property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work.\n      ",
+            "owl:cardinality": "many"
+          },
+          "version": {
+            "description": "The version of the CreativeWork embodied by a specified resource.",
+            "owl:cardinality": "one"
+          },
+          "description": {
+            "description": "A description of the item.",
+            "owl:cardinality": "one"
+          },
+          "identifier": {
+            "description": "The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.\n        ",
+            "owl:cardinality": "many"
+          },
+          "name": {
+            "description": "The name of the item.",
+            "owl:cardinality": "one"
+          },
+          "url": {
+            "description": "URL of the item.",
+            "owl:cardinality": "one"
+          }
+        },
+        "required": [
+          "codeRepository",
+          "programmingLanguage",
+          "version",
+          "description",
+          "name",
+          "url"
+        ],
+        "recommended": [
+          "versionControlSystem",
+          "targetProduct",
+          "archivedAt",
+          "author",
+          "citation",
+          "identifier",
+          "keywords",
+          "license",
+          "sameAs",
+          "input",
+          "output",
+          "readme",
+          "intendedUse"
+        ],
+        "optional": [
+          "codeSampleType",
+          "runtimePlatform",
+          "conditionsOfAccess",
+          "contributor",
+          "copyrightHolder",
+          "dateModified",
+          "datePublished",
+          "discussionUrl",
+          "isAccessibleForFree",
+          "maintainer",
+          "buildInstructions",
+          "issueTracker",
+          "referencePublication",
+          "developerDocumentation",
+          "learningResource",
+          "changelog",
+          "testedWith",
+          "userDocumentation",
+          "deployInstructions",
+          "installInstructions",
+          "testInstructions"
+        ]
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    }
+  ]
+}
