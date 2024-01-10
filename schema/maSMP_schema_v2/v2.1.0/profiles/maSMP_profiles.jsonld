@@ -1,0 +1,626 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "bs": "https://bioschemas.org/terms/",
+    "codemeta": "https://w3id.org/codemeta/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "maSMP:": "https://discovery.biothings.io/view/maSMP/"
+  },
+  "@graph": [
+    {
+      "@id": "bs:input",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "bs:FormalParameter"
+      },
+      "rdfs:comment": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
+      "rdfs:label": "input"
+    },
+    {
+      "@id": "bs:output",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "bs:FormalParameter"
+      },
+      "rdfs:comment": "An output produced by the computational workflow (or software).",
+      "rdfs:label": "output"
+    },
+    {
+      "@id": "codemeta:readme",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      },
+      "rdfs:comment": "Link to this software Readme file. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
+      "rdfs:label": "readme"
+    },
+    {
+      "@id": "schema:operatingSystem",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the operating system.",
+      "rdfs:label": "operatingSystem"
+    },
+    {
+      "@id": "schema:processorRequirements",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the processor specification.",
+      "rdfs:label": "processorRequirements"
+    },
+    {
+      "@id": "schema:runtimePlatform",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the runtime platform.",
+      "rdfs:label": "runtimePlatform"
+    },
+    {
+      "@id": "maSMP:SoftwareApplication",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been mapped via crosswalks to other SMPs <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>here</a> and <a href='https://doi.org/10.5281/zenodo.10275895' target='_blank'>here</a>. ",
+      "rdfs:label": "SoftwareApplication",
+      "rdfs:subClassOf": {
+        "@id": "schema:SoftwareApplication"
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    },
+    {
+      "@id": "maSMP:SoftwareRunAction",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
+      "rdfs:label": "SoftwareRunAction",
+      "rdfs:subClassOf": {
+        "@id": "schema:Action"
+      },
+      "$validation": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "operatingSystem": {
+            "description": "If the running was done by a direct execution (rather than via a container), indicate the operating system.",
+            "owl:cardinality": "one"
+          },
+          "processorRequirements": {
+            "description": "If the running was done by a direct execution (rather than via a container), indicate the processor specification.",
+            "owl:cardinality": "one"
+          },
+          "runtimePlatform": {
+            "description": "If the running was done by a direct execution (rather than via a container), indicate the runtime platform.",
+            "owl:cardinality": "one"
+          },
+          "runContainer": {
+            "description": "If the running was done using a container, such container should be pointed to here.",
+            "owl:cardinality": "one"
+          },
+          "runInput": {
+            "description": "Actual input used by this action to run a software.",
+            "owl:cardinality": "many"
+          },
+          "softwareRun": {
+            "description": "Software executed by this running action.",
+            "owl:cardinality": "one"
+          },
+          "result": {
+            "description": "The result produced in the action. e.g. John wrote *a book*.",
+            "owl:cardinality": "many"
+          }
+        },
+        "required": [
+          "softwareRun"
+        ],
+        "recommended": [
+          "result"
+        ],
+        "optional": [
+          "operatingSystem",
+          "processorRequirements",
+          "runtimePlatform",
+          "runContainer",
+          "runInput"
+        ]
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    },
+    {
+      "@id": "maSMP:SoftwareSourceCode",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been mapped via crosswalks to other SMPs <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>here</a> and <a href='https://doi.org/10.5281/zenodo.10275895' target='_blank'>here</a>. ",
+      "rdfs:label": "SoftwareSourceCode",
+      "rdfs:subClassOf": {
+        "@id": "schema:SoftwareSourceCode"
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    },
+    {
+      "@id": "maSMP:SoftwareTestAction",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
+      "rdfs:label": "SoftwareTestAction",
+      "rdfs:subClassOf": {
+        "@id": "schema:Action"
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    },
+    {
+      "@id": "maSMP:developerDocumentation",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "rdfs:comment": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
+      "rdfs:label": "developerDocumentation"
+    },
+    {
+      "@id": "maSMP:learningResource",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:LearningResource"
+      },
+      "rdfs:comment": "Any <a href='https://schema.org/LearningResource' target='_blank'>LearningResource</a> that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
+      "rdfs:label": "learningResource"
+    },
+    {
+      "@id": "codemeta:referencePublication",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:ScholarlyArticle"
+      },
+      "rdfs:comment": "An academic publication related to the software. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
+      "rdfs:label": "referencePublication"
+    },
+    {
+      "@id": "maSMP:runContainer",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      },
+      "rdfs:comment": "If the running was done using a container, such container should be pointed to here.",
+      "rdfs:label": "runContainer"
+    },
+    {
+      "@id": "maSMP:runInput",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Actual input used by this action to run a software.",
+      "rdfs:label": "runInput",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+        },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Thing"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:softwareRun",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "rdfs:comment": "Software executed by this running action.",
+      "rdfs:label": "softwareRun"
+    },
+    {
+      "@id": "maSMP:softwareTested",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to the software tested by this action.",
+      "rdfs:label": "softwareTested",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareTestAction"
+        },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:testInput",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareTestAction"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Thing"
+        },
+        {
+          "@id": "schema:ListItem"
+        }
+      ],
+      "rdfs:comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.",
+      "rdfs:label": "testInput"
+    },
+    {
+      "@id": "maSMP:testType",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareTestAction"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
+        }
+      ],
+      "rdfs:comment": "The type of test that it is performed on the object.",
+      "rdfs:label": "testType"
+    },
+    {
+      "@id": "maSMP:testedWith",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "maSMP:SoftwareTestAction"
+      },
+      "rdfs:comment": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software.",
+      "rdfs:label": "testedWith"
+    },
+    {
+      "@id": "maSMP:userDocumentation",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "rdfs:comment": "Documentation about this software directed to users who will use this software as it is.",
+      "rdfs:label": "userDocumentation"
+    },
+    {
+      "@id": "maSMP:versionControlSystem",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareSourceCode"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:SoftwareApplication"
+      },
+      "rdfs:comment": "Version control system used for this source code, to keep track of all commits, branches and so.",
+      "rdfs:label": "versionControlSystem"
+    },
+    {
+      "@id": "codemeta:buildInstructions",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to installation instructions/documentation.",
+      "rdfs:label": "buildInstructions",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareApplication"
+        },
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:URL"
+        }
+      ]
+    },
+    {
+      "@id": "codemeta:issueTracker",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to software bug reporting or issue tracking system.",
+      "rdfs:label": "issueTracker",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareApplication"
+        },
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:URL"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:changelog",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to CHANGELOG file.",
+      "rdfs:label": "changelog",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareApplication"
+        },
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:URL"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:intendedUse",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Purpose and intended use of this software.",
+      "rdfs:label": "intendedUse",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareApplication"
+        },
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:deployInstructions",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Text or link to deployment instructions/documentation.",
+      "rdfs:label": "deployInstructions",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareApplication"
+        },
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:installInstructions",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Text or link to installation instructions/documentation. It should not be confused with the installUrl which points to a place where the installation package (e.g., .exe) can be found.",
+      "rdfs:label": "installInstructions",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareApplication"
+        },
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:testInstructions",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Text or link to testing instructions/documentation.",
+      "rdfs:label": "testInstructions",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareApplication"
+        },
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ]
+    },{
+      "@id": "maSMP:OutputManagementPlan",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Management plans (e.g., data, software, other research output/outcomes/artifacts) are a tool for researchers and research stewards to organize and plan around research artifacts, from initial ideas to publication. This type builds on top of <a href='https://schema.datacite.org/meta/kernel-4.4/' target='_blank'>DataCite Metadata Schema 4.4</a> and maps it mandatory elements to schema.org to represent research artifact management plans. This type could be extended to cover particularities wrt management plans for specific research outcomes, e.g., data management plans or software management plans.",
+      "rdfs:label": "OutputManagementPlan",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    },
+    {
+      "@id": "maSMP:researchProject",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to the research project this mng plan belongs to",
+      "rdfs:label": "researchProject",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:ResearchProject"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:ethicalLegalSocial",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Considerations wrt ethical, legal and social aspects",
+      "rdfs:label": "ethicalLegalSocial",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:relatedMngPlans",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to other management plans associated to this one, e.g., an SMP associated to the DMP on the datasets used by the software",
+      "rdfs:label": "relatedMngPlans",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "maSMP:OutputManagementPlan"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:questionnaire",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Questions asked in this management plan. If the order is important <a href='https://schema.org/ItemList' target='_blank'>ItemList</a> can be used, otherwise an array of <a href='https://schema.org/Question' target='_blank'>Question</a> would work.",
+      "rdfs:label": "questionnaire",
+      "schema:domainIncludes": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Question"
+        },
+        {
+          "@id": "schema:ItemList"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:SoftwareManagementPlan",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Software Management plan.",
+      "rdfs:label": "SoftwareManagementPlan",
+      "rdfs:subClassOf": {
+        "@id": "maSMP:OutputManagementPlan"
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
+    },
+    {
+      "@id": "maSMP:managedSoftware",
+      "@type": "rdf:Property",
+      "rdfs:comment": "SoftwareSourceCode handled by this software mng plan. Software applications, tools and releases from the source code should be linked directly to the source code.",
+      "rdfs:label": "managedSoftware",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareManagementPlan"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        }
+      ]
+    }
+  ]
+}
