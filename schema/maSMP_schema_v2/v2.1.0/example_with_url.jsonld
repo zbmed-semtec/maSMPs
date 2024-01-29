@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org/",
+  "@id": "https://my.masmp.example/maSMP",
+  "@type": "https://discovery.biothings.io/view/maSMP/SoftwareManagementPlan",
+  "name": "maSMP example",
+  "datePublished": "2024-01-29",
+  "author": [
+    {
+      "@id": "https://orcid.org/0000",
+      "@type": "Person",
+      "schema:name": "Jane Doe"
+    }
+  ],
+  "identifier": "https://doi.org/0000",
+  "publisher": "GitHub",
+  "https://discovery.biothings.io/view/maSMP/researchProject": {
+    "@id": "https://my.masmp.example/rp",
+    "@type": "schema:ResearchProject",
+    "name": "maSMP Example",
+    "description": "Example with some info but not all the minimum properties suggested by the profile"
+  },
+  "https://discovery.biothings.io/view/maSMP/managedSoftware": {
+    "@id": "https://my.masmp.example/ssc",
+    "@type": "schema:SoftwareSourceCode",
+    "name": "My managed software",
+    "programmingLanguage": "Python",
+    "version": "0.0.1",
+    "codeRepository": "https://github.com/0000"
+  }
+}

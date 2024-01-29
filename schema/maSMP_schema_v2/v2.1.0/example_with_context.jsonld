@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "maSMP": "https://discovery.biothings.io/view/maSMP/"
+  },
+  "@id": "https://my.masmp.example/maSMP",
+  "@type": "maSMP:SoftwareManagementPlan",
+  "schema:name": "maSMP example",
+  "schema:datePublished": "2024-01-29",
+  "schema:author": [
+    {
+      "@id": "https://orcid.org/0000",
+      "@type": "schema:Person",
+      "schema:name": "Jane Doe"
+    }
+  ],
+  "schema:identifier": "https://doi.org/0000",
+  "schema:publisher": "GitHub",
+  "maSMP:researchProject": {
+    "@id": "https://my.masmp.example/rp",
+    "@type": "schema:ResearchProject",
+    "schema:name": "maSMP Example",
+    "schema:description": "Example with some info but not all the minimum properties suggested by the profile"
+  },
+  "maSMP:managedSoftware": {
+    "@id": "https://my.masmp.example/ssc",
+    "@type": "schema:SoftwareSourceCode",
+    "schema:name": "My managed software",
+    "schema:programmingLanguage": "Python",
+    "schema:version": "0.0.1",
+    "schema:codeRepository": "https://github.com/0000"
+  }
+}
