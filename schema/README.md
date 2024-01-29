@@ -8,6 +8,8 @@ We have defined a metadata schema in the form of an ontology representing the ne
 
 The [current version is 2.1.0](./maSMP_schema_v2/maSMP_v2.jsonld) with [corresponding usage profiles/guidelines](./maSMP_schema_v2/v2.1.0/profiles/). We have use the [Data Discovery Engine (DDE)](https://discovery.biothings.io/) to create types and properties, merging them all in one file corresponding to v2.1.0.
 
+[maSMP types](https://discovery.biothings.io/ns/maSMP) and [maSMP profiles](https://discovery.biothings.io/ns/maSMPProfiles) can be visualized in the DDE platform. Follow the links and you will get a summary of types and properties, and the corresponding profiles with usage guidelines (e.g., minimum, recommended and optional properties with cardinality).
+
 Future versions will be released based on new or improved crosswalks to SMP platforms such as [SMW](https://smw.ds-wizard.org) and [RDMO](https://rdmorganiser.github.io/).
 
 ### How to use version 2.1.0
