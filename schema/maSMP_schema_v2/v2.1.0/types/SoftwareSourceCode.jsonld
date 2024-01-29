@@ -9,24 +9,12 @@
   },
   "@graph": [
     {
-      "@id": "maSMP:SoftwareSourceCode",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been mapped via crosswalks to other SMPs <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>here</a> and <a href='https://doi.org/10.5281/zenodo.10275895' target='_blank'>here</a>. ",
-      "rdfs:label": "SoftwareSourceCode",
-      "rdfs:subClassOf": {
-        "@id": "schema:SoftwareSourceCode"
-      },
-      "schemaVersion": [
-        "https://schema.org/docs/releases.html#v23.0"
-      ]
-    },
-    {
       "@id": "maSMP:furtherDocumentation",
       "@type": "rdf:Property",
       "rdfs:comment": "Any other documentation corresponding to this software that is not better specified by other documentation related properties",
       "rdfs:label": "furtherDocumentation",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -40,7 +28,7 @@
       "rdfs:comment": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
       "rdfs:label": "developerDocumentation",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -54,7 +42,7 @@
       "rdfs:comment": "Documentation about this software directed to users who will use this software as it is.",
       "rdfs:label": "userDocumentation",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -68,7 +56,7 @@
       "rdfs:comment": "Version control system used for this source code, to keep track of all commits, branches and so.",
       "rdfs:label": "versionControlSystem",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -82,7 +70,7 @@
       "rdfs:comment": "Any <a href='https://schema.org/LearningResource' target='_blank'>LearningResource</a> that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
       "rdfs:label": "learningResource",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -96,7 +84,7 @@
       "rdfs:comment": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software.",
       "rdfs:label": "testedWith",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -110,7 +98,7 @@
       "rdfs:comment": "Link to this software Readme file. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
       "rdfs:label": "readme",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -124,7 +112,7 @@
       "rdfs:comment": "An academic publication related to the software. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
       "rdfs:label": "referencePublication",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -138,7 +126,7 @@
       "rdfs:comment": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
       "rdfs:label": "input",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -152,7 +140,7 @@
       "rdfs:comment": "An output produced by the computational workflow (or software).",
       "rdfs:label": "output",
       "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
+        "@id": "schema:SoftwareSourceCode"
       },
       "schema:rangeIncludes": [
         {
@@ -167,7 +155,7 @@
       "rdfs:label": "buildInstructions",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -183,7 +171,7 @@
       "rdfs:label": "issueTracker",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -199,7 +187,7 @@
       "rdfs:label": "changelog",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -215,7 +203,7 @@
       "rdfs:label": "intededUse",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -231,7 +219,7 @@
       "rdfs:label": "deployInstructions",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -250,7 +238,7 @@
       "rdfs:label": "installInstructions",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -269,7 +257,7 @@
       "rdfs:label": "testInstructions",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [

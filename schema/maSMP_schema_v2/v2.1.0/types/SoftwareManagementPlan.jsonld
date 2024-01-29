@@ -28,7 +28,7 @@
       },
       "schema:rangeIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ]
     }

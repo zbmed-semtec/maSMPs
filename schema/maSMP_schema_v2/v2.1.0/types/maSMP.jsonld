@@ -9,55 +9,16 @@
   },
   "@graph": [
     {
-      "@id": "bs:input",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:SoftwareApplication"
-        }
-      ],
-      "schema:rangeIncludes": {
-        "@id": "bs:FormalParameter"
+      "@id": "maSMP:SoftwareRunAction",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
+      "rdfs:label": "SoftwareRunAction",
+      "rdfs:subClassOf": {
+        "@id": "schema:Action"
       },
-      "rdfs:comment": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
-      "rdfs:label": "input"
-    },
-    {
-      "@id": "bs:output",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:SoftwareApplication"
-        }
-      ],
-      "schema:rangeIncludes": {
-        "@id": "bs:FormalParameter"
-      },
-      "rdfs:comment": "An output produced by the computational workflow (or software).",
-      "rdfs:label": "output"
-    },
-    {
-      "@id": "codemeta:readme",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:SoftwareApplication"
-        }
-      ],
-      "schema:rangeIncludes": {
-        "@id": "schema:URL"
-      },
-      "rdfs:comment": "Link to this software Readme file. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
-      "rdfs:label": "readme"
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "schema:operatingSystem",
@@ -96,105 +57,6 @@
       "rdfs:label": "runtimePlatform"
     },
     {
-      "@id": "maSMP:SoftwareApplication",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been mapped via crosswalks to other SMPs <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>here</a> and <a href='https://doi.org/10.5281/zenodo.10275895' target='_blank'>here</a>. ",
-      "rdfs:label": "SoftwareApplication",
-      "rdfs:subClassOf": {
-        "@id": "schema:SoftwareApplication"
-      },
-      "schemaVersion": [
-        "https://schema.org/docs/releases.html#v23.0"
-      ]
-    },
-    {
-      "@id": "maSMP:SoftwareRunAction",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
-      "rdfs:label": "SoftwareRunAction",
-      "rdfs:subClassOf": {
-        "@id": "schema:Action"
-      },
-      "schemaVersion": [
-        "https://schema.org/docs/releases.html#v23.0"
-      ]
-    },
-    {
-      "@id": "maSMP:SoftwareSourceCode",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case. For more information on SMPs see <a href='https://doi.org/10.37044/osf.io/k8znb' target='_blank'>ELIXIR Software Management Plan for Life Sciences</a>. Properties have also been mapped via crosswalks to other SMPs <a href='https://doi.org/10.5281/zenodo.8087357' target='_blank'>here</a> and <a href='https://doi.org/10.5281/zenodo.10275895' target='_blank'>here</a>. ",
-      "rdfs:label": "SoftwareSourceCode",
-      "rdfs:subClassOf": {
-        "@id": "schema:SoftwareSourceCode"
-      },
-      "schemaVersion": [
-        "https://schema.org/docs/releases.html#v23.0"
-      ]
-    },
-    {
-      "@id": "maSMP:SoftwareTestAction",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
-      "rdfs:label": "SoftwareTestAction",
-      "rdfs:subClassOf": {
-        "@id": "schema:Action"
-      },
-      "schemaVersion": [
-        "https://schema.org/docs/releases.html#v23.0"
-      ]
-    },
-    {
-      "@id": "maSMP:developerDocumentation",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:SoftwareApplication"
-        }
-      ],
-      "schema:rangeIncludes": {
-        "@id": "schema:CreativeWork"
-      },
-      "rdfs:comment": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
-      "rdfs:label": "developerDocumentation"
-    },
-    {
-      "@id": "maSMP:learningResource",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:SoftwareApplication"
-        }
-      ],
-      "schema:rangeIncludes": {
-        "@id": "schema:LearningResource"
-      },
-      "rdfs:comment": "Any <a href='https://schema.org/LearningResource' target='_blank'>LearningResource</a> that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
-      "rdfs:label": "learningResource"
-    },
-    {
-      "@id": "codemeta:referencePublication",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:SoftwareApplication"
-        }
-      ],
-      "schema:rangeIncludes": {
-        "@id": "schema:ScholarlyArticle"
-      },
-      "rdfs:comment": "An academic publication related to the software. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
-      "rdfs:label": "referencePublication"
-    },
-    {
       "@id": "maSMP:runContainer",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
@@ -228,14 +90,29 @@
       },
       "schema:rangeIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         },
         {
-          "@id": "maSMP:SoftwareApplication"
+          "@id": "schema:SoftwareApplication"
         }
       ],
       "rdfs:comment": "Software executed by this running action.",
       "rdfs:label": "softwareRun"
+    },
+
+
+
+    {
+      "@id": "maSMP:SoftwareTestAction",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
+      "rdfs:label": "SoftwareTestAction",
+      "rdfs:subClassOf": {
+        "@id": "schema:Action"
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v23.0"
+      ]
     },
     {
       "@id": "maSMP:softwareTested",
@@ -268,7 +145,7 @@
           "@id": "schema:ListItem"
         }
       ],
-      "rdfs:comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.",
+      "rdfs:comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If order or grouping is important in the case of multiple inputs, a ListItem could help.",
       "rdfs:label": "testInput"
     },
     {
@@ -291,52 +168,85 @@
       "rdfs:comment": "The type of test that it is performed on the object.",
       "rdfs:label": "testType"
     },
+  
+
+
     {
-      "@id": "maSMP:testedWith",
+      "@id": "maSMP:ethicalLegalSocial",
       "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:SoftwareApplication"
-        }
-      ],
-      "schema:rangeIncludes": {
-        "@id": "maSMP:SoftwareTestAction"
-      },
-      "rdfs:comment": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software.",
-      "rdfs:label": "testedWith"
-    },
-    {
-      "@id": "maSMP:userDocumentation",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        },
-        {
-          "@id": "maSMP:SoftwareApplication"
-        }
-      ],
-      "schema:rangeIncludes": {
+      "rdfs:comment": "Considerations wrt ethical, legal and social aspects",
+      "rdfs:label": "ethicalLegalSocial",
+      "schema:domainIncludes": {
         "@id": "schema:CreativeWork"
       },
-      "rdfs:comment": "Documentation about this software directed to users who will use this software as it is.",
-      "rdfs:label": "userDocumentation"
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        }
+      ]
     },
     {
-      "@id": "maSMP:versionControlSystem",
+      "@id": "maSMP:intendedUse",
       "@type": "rdf:Property",
-      "schema:domainIncludes": {
-        "@id": "maSMP:SoftwareSourceCode"
-      },
-      "schema:rangeIncludes": {
-        "@id": "schema:SoftwareApplication"
-      },
-      "rdfs:comment": "Version control system used for this source code, to keep track of all commits, branches and so.",
-      "rdfs:label": "versionControlSystem"
+      "rdfs:comment": "Purpose and intended use stated to enable users to make a decision as to the suitability of this creative work (e.g., lab protocol, machine learning model, software) to their experimental problem or own use case.",
+      "rdfs:label": "intendedUse",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:CreativeWork"
+        }
+      ],
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:DefinedTerm"
+        },
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        }
+      ]
     },
+
+
+    
+    {
+      "@id": "bs:input",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "bs:FormalParameter"
+      },
+      "rdfs:comment": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
+      "rdfs:label": "input"
+    },
+    {
+      "@id": "bs:output",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "bs:FormalParameter"
+      },
+      "rdfs:comment": "An output produced by the computational workflow (or software).",
+      "rdfs:label": "output"
+    },
+
+
+
     {
       "@id": "codemeta:buildInstructions",
       "@type": "rdf:Property",
@@ -344,10 +254,10 @@
       "rdfs:label": "buildInstructions",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareApplication"
+          "@id": "schema:SoftwareApplication"
         },
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -363,10 +273,10 @@
       "rdfs:label": "issueTracker",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareApplication"
+          "@id": "schema:SoftwareApplication"
         },
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -375,6 +285,43 @@
         }
       ]
     },
+    {
+      "@id": "codemeta:readme",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      },
+      "rdfs:comment": "Link to this software Readme file. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
+      "rdfs:label": "readme"
+    },
+    {
+      "@id": "codemeta:referencePublication",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:ScholarlyArticle"
+      },
+      "rdfs:comment": "An academic publication related to the software. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>.",
+      "rdfs:label": "referencePublication"
+    },
+
+
+
     {
       "@id": "maSMP:changelog",
       "@type": "rdf:Property",
@@ -382,10 +329,10 @@
       "rdfs:label": "changelog",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareApplication"
+          "@id": "schema:SoftwareApplication"
         },
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -393,26 +340,7 @@
           "@id": "schema:URL"
         }
       ]
-    },
-    {
-      "@id": "maSMP:intendedUse",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Purpose and intended use of this software.",
-      "rdfs:label": "intendedUse",
-      "schema:domainIncludes": [
-        {
-          "@id": "maSMP:SoftwareApplication"
-        },
-        {
-          "@id": "maSMP:SoftwareSourceCode"
-        }
-      ],
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:Text"
-        }
-      ]
-    },
+    },    
     {
       "@id": "maSMP:deployInstructions",
       "@type": "rdf:Property",
@@ -420,10 +348,10 @@
       "rdfs:label": "deployInstructions",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareApplication"
+          "@id": "schema:SoftwareApplication"
         },
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -434,6 +362,23 @@
           "@id": "schema:URL"
         }
       ]
+    },
+    {
+      "@id": "maSMP:developerDocumentation",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "rdfs:comment": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
+      "rdfs:label": "developerDocumentation"
     },
     {
       "@id": "maSMP:installInstructions",
@@ -442,10 +387,10 @@
       "rdfs:label": "installInstructions",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareApplication"
+          "@id": "schema:SoftwareApplication"
         },
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -458,16 +403,33 @@
       ]
     },
     {
+      "@id": "maSMP:learningResource",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:LearningResource"
+      },
+      "rdfs:comment": "Any <a href='https://schema.org/LearningResource' target='_blank'>LearningResource</a> that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
+      "rdfs:label": "learningResource"
+    },
+    {
       "@id": "maSMP:testInstructions",
       "@type": "rdf:Property",
       "rdfs:comment": "Text or link to testing instructions/documentation.",
       "rdfs:label": "testInstructions",
       "schema:domainIncludes": [
         {
-          "@id": "maSMP:SoftwareApplication"
+          "@id": "schema:SoftwareApplication"
         },
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ],
       "schema:rangeIncludes": [
@@ -478,7 +440,57 @@
           "@id": "schema:URL"
         }
       ]
-    },{
+    },
+    {
+      "@id": "maSMP:testedWith",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "maSMP:SoftwareTestAction"
+      },
+      "rdfs:comment": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software.",
+      "rdfs:label": "testedWith"
+    },
+    {
+      "@id": "maSMP:userDocumentation",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "rdfs:comment": "Documentation about this software directed to users who will use this software as it is.",
+      "rdfs:label": "userDocumentation"
+    },
+    {
+      "@id": "maSMP:versionControlSystem",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "schema:SoftwareSourceCode"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:SoftwareApplication"
+      },
+      "rdfs:comment": "Version control system used for this source code, to keep track of all commits, branches and so.",
+      "rdfs:label": "versionControlSystem"
+    },
+
+    
+
+    {
       "@id": "maSMP:OutputManagementPlan",
       "@type": "rdfs:Class",
       "rdfs:comment": "Management plans (e.g., data, software, other research output/outcomes/artifacts) are a tool for researchers and research stewards to organize and plan around research artifacts, from initial ideas to publication. This type builds on top of <a href='https://schema.datacite.org/meta/kernel-4.4/' target='_blank'>DataCite Metadata Schema 4.4</a> and maps it mandatory elements to schema.org to represent research artifact management plans. This type could be extended to cover particularities wrt management plans for specific research outcomes, e.g., data management plans or software management plans.",
@@ -501,20 +513,6 @@
       "schema:rangeIncludes": [
         {
           "@id": "schema:ResearchProject"
-        }
-      ]
-    },
-    {
-      "@id": "maSMP:ethicalLegalSocial",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Considerations wrt ethical, legal and social aspects",
-      "rdfs:label": "ethicalLegalSocial",
-      "schema:domainIncludes": {
-        "@id": "maSMP:OutputManagementPlan"
-      },
-      "schema:rangeIncludes": [
-        {
-          "@id": "schema:Text"
         }
       ]
     },
@@ -549,6 +547,9 @@
         }
       ]
     },
+    
+    
+    
     {
       "@id": "maSMP:SoftwareManagementPlan",
       "@type": "rdfs:Class",
@@ -571,7 +572,7 @@
       },
       "schema:rangeIncludes": [
         {
-          "@id": "maSMP:SoftwareSourceCode"
+          "@id": "schema:SoftwareSourceCode"
         }
       ]
     }
