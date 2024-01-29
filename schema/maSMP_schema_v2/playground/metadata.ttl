@@ -1,0 +1,13 @@
+<https://discovery.biothings.io/view/maSMP/> 
+  rdf:type owl:Ontology ;
+  schema:author <https://orcid.org/0000-0003-3986-0510> ,
+                <https://orcid.org/0000-0003-2978-8922> ,
+                <https://orcid.org/0000-0002-2910-7982> ,
+                <https://orcid.org/0000-0002-5037-0443> ,                   
+                <https://orcid.org/0009-0004-1529-0095> ,
+                <https://orcid.org/0000-0002-1018-0370> ;
+  schema:name "maSMP metadata schema" ;
+  schema:license <https://spdx.org/licenses/CC-BY-4.0.html> ;
+  schema:version "2.1.0" ;
+  rdfs:label "maSMP metadata schema" ;
+  owl:versionInfo "2.1.0" .
