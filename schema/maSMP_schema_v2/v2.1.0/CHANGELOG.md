@@ -15,3 +15,5 @@ In this new version of the maSMP metadata schema we added the following properti
 And also added two new types maSMP:OutputManagementPlan and maSMP:SoftwareManagementPlan
 
 [Crosswalks supporting this version](https://doi.org/10.5281/zenodo.10275895) are publicly available.
+
+We also remove the subclassing of schema:SoftwareApplication and schema:SoftwareSourceCode but keep the new properties for these two types proposed in v2.0.0

@@ -47,10 +47,10 @@
       ]
     },
     {
-      "@id": "maSMP:relatedMngPlans",
+      "@id": "maSMP:relatedMngPlan",
       "@type": "rdf:Property",
       "rdfs:comment": "Link to other management plans associated to this one, e.g., an SMP associated to the DMP on the datasets used by the software",
-      "rdfs:label": "relatedMngPlans",
+      "rdfs:label": "relatedMngPlan",
       "schema:domainIncludes": {
         "@id": "maSMP:OutputManagementPlan"
       },

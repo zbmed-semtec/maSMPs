@@ -264,13 +264,13 @@ schema:runtimePlatform
   rdfs:label "researchProject"^^xsd:string ;
   rdfs:range schema:ResearchProject .
 
-<https://discovery.biothings.io/view/maSMP/relatedMngPlans>
+<https://discovery.biothings.io/view/maSMP/relatedMngPlan>
   a rdf:Property ;
   schema:domainIncludes <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
   schema:rangeIncludes <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
   rdfs:comment "Link to other management plans associated to this one, e.g., an SMP associated to the DMP on the datasets used by the software"^^xsd:string ;
   rdfs:domain <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
-  rdfs:label "relatedMngPlans"^^xsd:string ;
+  rdfs:label "relatedMngPlan"^^xsd:string ;
   rdfs:range <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> .
 
 <https://discovery.biothings.io/view/maSMP/questionnaire>
