@@ -2,7 +2,7 @@
 
 ## About
 
-We have defined a metadata schema in the form of an ontology representing the necessary metadata elements for a maSMP. The metadata schema includes entities involved in software management planning; such as an SMP itself, software source code, software release, documentation, authors and their relations. We are reusing terms mainly from [schema.org](https://schema.org/) and from [DCSO](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard), with some few additions of our own. 
+We have defined a metadata schema in the form of an ontology representing the necessary metadata elements for a maSMP. The metadata schema includes entities involved in software management planning; such as an SMP itself, software source code, software release, documentation, authors and their relations. We are reusing terms mainly from [schema.org](https://schema.org/) and from the [RDA-DMP-Common-Standard maDMP application profile](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard), with some few additions of our own. 
 
 ## Current version
 
@@ -20,4 +20,16 @@ Our aim is integrating our maSMP metadata schema to [Bioschemas](http://bioschem
 ## Credits
 
 This ontology/metadata schema has been developed by Leyla Jael Castro, Olga Giraldo, Lukas Geist, Nelson Quiñones, Dhwani Solanki, and Dietrich Rebholz-Schuhmann. More information can be found at the [maSMP GitHub pages](https://zbmed-semtec.github.io/maSMPs/) and the [maSMP metadata pages](https://w3id.org/zbmed-semtec/projects/2022_maSMP).
+
+The schema is based on:
+* [schema.org v23](https://schema.org/docs/releases.html#v23.0)
+* [Codemeta](https://codemeta.github.io/)
+* [Bioschemas](https://bioschemas.org)
+* [ELIXIR SMP](https://doi.org/10.37044/osf.io/k8znb)
+* SMP metadata crosswalks from [May 2023](https://doi.org/10.5281/zenodo.8087356) and [December 2023](https://doi.org/10.5281/zenodo.10275894)
+* [RDA-DMP-Common-Standard maDMP application profile](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard)
+
+The maSMP project is part of the [NFDI4DataScience](https://www.nfdi4datascience.de/) project funded by the [German Research Foundation (DFG)](https://www.dfg.de/), project number [460234259](https://gepris.dfg.de/gepris/projekt/460234259). 
+
+This project received funding (December 2022 to May 2023) from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101017536 which is part of the Research Data Alliance and European Open Science Cloud Future call 2022. [More info](https://eoscfuture-grants.eu/node/275).
 
