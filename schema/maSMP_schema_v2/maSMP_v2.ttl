@@ -1,0 +1,298 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://discovery.biothings.io/view/maSMP/SoftwareRunAction>
+  a rdfs:Class ;
+  rdfs:comment "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result)."^^xsd:string ;
+  rdfs:label "SoftwareRunAction"^^xsd:string ;
+  rdfs:subClassOf schema:Action .
+
+schema:operatingSystem
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  schema:rangeIncludes schema:Text ;
+  rdfs:comment "If the running was done by a direct execution (rather than via a container), indicate the operating system."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  rdfs:label "operatingSystem"^^xsd:string ;
+  rdfs:range schema:Text .
+
+schema:processorRequirements
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  schema:rangeIncludes schema:Text ;
+  rdfs:comment "If the running was done by a direct execution (rather than via a container), indicate the processor specification."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  rdfs:label "processorRequirements"^^xsd:string ;
+  rdfs:range schema:Text .
+
+schema:runtimePlatform
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  schema:rangeIncludes schema:Text ;
+  rdfs:comment "If the running was done by a direct execution (rather than via a container), indicate the runtime platform."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  rdfs:label "runtimePlatform"^^xsd:string ;
+  rdfs:range schema:Text .
+
+<https://discovery.biothings.io/view/maSMP/runContainer>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  schema:rangeIncludes schema:URL ;
+  rdfs:comment "If the running was done using a container, such container should be pointed to here."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  rdfs:label "runContainer"^^xsd:string ;
+  rdfs:range schema:URL .
+
+<https://discovery.biothings.io/view/maSMP/runInput>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  schema:rangeIncludes schema:Thing ;
+  rdfs:comment "Actual input used by this action to run a software."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  rdfs:label "runInput"^^xsd:string ;
+  rdfs:range schema:Thing .
+
+<https://discovery.biothings.io/view/maSMP/softwareRun>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  schema:rangeIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:comment "Software executed by this running action."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareRunAction> ;
+  rdfs:label "softwareRun"^^xsd:string ;
+  rdfs:range schema:SoftwareSourceCode, schema:SoftwareApplication .
+
+<https://discovery.biothings.io/view/maSMP/SoftwareTestAction>
+  a rdfs:Class ;
+  rdfs:comment "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result)."^^xsd:string ;
+  rdfs:label "SoftwareTestAction"^^xsd:string ;
+  rdfs:subClassOf schema:Action .
+
+<https://discovery.biothings.io/view/maSMP/softwareTested>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareTestAction> ;
+  schema:rangeIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:comment "Link to the software tested by this action."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareTestAction> ;
+  rdfs:label "softwareTested"^^xsd:string ;
+  rdfs:range schema:SoftwareSourceCode, schema:SoftwareApplication .
+
+<https://discovery.biothings.io/view/maSMP/testInput>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareTestAction> ;
+  schema:rangeIncludes schema:Thing, schema:ListItem ;
+  rdfs:comment "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareTestAction> ;
+  rdfs:label "testInput"^^xsd:string ;
+  rdfs:range schema:Thing, schema:ListItem .
+
+<https://discovery.biothings.io/view/maSMP/testType>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareTestAction> ;
+  schema:rangeIncludes schema:Text, schema:URL, schema:DefinedTerm ;
+  rdfs:comment "The type of test that it is performed on the object."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareTestAction> ;
+  rdfs:label "testType"^^xsd:string ;
+  rdfs:range schema:Text, schema:URL, schema:DefinedTerm .
+
+<https://discovery.biothings.io/view/maSMP/ethicalLegalSocial>
+  a rdf:Property ;
+  schema:domainIncludes schema:CreativeWork ;
+  schema:rangeIncludes schema:Text ;
+  rdfs:comment "Considerations wrt ethical, legal and social aspects"^^xsd:string ;
+  rdfs:domain schema:CreativeWork ;
+  rdfs:label "ethicalLegalSocial"^^xsd:string ;
+  rdfs:range schema:Text .
+
+<https://discovery.biothings.io/view/maSMP/intendedUse>
+  a rdf:Property ;
+  schema:domainIncludes schema:CreativeWork ;
+  schema:rangeIncludes schema:DefinedTerm, schema:Text, schema:URL ;
+  rdfs:comment "Purpose and intended use stated to enable users to make a decision as to the suitability of this creative work (e.g., lab protocol, machine learning model, software) to their experimental problem or own use case."^^xsd:string ;
+  rdfs:domain schema:CreativeWork ;
+  rdfs:label "intendedUse"^^xsd:string ;
+  rdfs:range schema:DefinedTerm, schema:Text, schema:URL .
+
+<https://bioschemas.org/terms/input>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  schema:rangeIncludes <https://bioschemas.org/terms/FormalParameter> ;
+  rdfs:comment "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file)."^^xsd:string ;
+  rdfs:domain schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:label "input"^^xsd:string ;
+  rdfs:range <https://bioschemas.org/terms/FormalParameter> .
+
+<https://bioschemas.org/terms/output>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  schema:rangeIncludes <https://bioschemas.org/terms/FormalParameter> ;
+  rdfs:comment "An output produced by the computational workflow (or software)."^^xsd:string ;
+  rdfs:domain schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:label "output"^^xsd:string ;
+  rdfs:range <https://bioschemas.org/terms/FormalParameter> .
+
+<https://w3id.org/codemeta/buildInstructions>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  schema:rangeIncludes schema:URL ;
+  rdfs:comment "Link to installation instructions/documentation."^^xsd:string ;
+  rdfs:domain schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  rdfs:label "buildInstructions"^^xsd:string ;
+  rdfs:range schema:URL .
+
+<https://w3id.org/codemeta/issueTracker>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  schema:rangeIncludes schema:URL ;
+  rdfs:comment "Link to software bug reporting or issue tracking system."^^xsd:string ;
+  rdfs:domain schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  rdfs:label "issueTracker"^^xsd:string ;
+  rdfs:range schema:URL .
+
+<https://w3id.org/codemeta/readme>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  schema:rangeIncludes schema:URL ;
+  rdfs:comment "Link to this software Readme file. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>."^^xsd:string ;
+  rdfs:domain schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:label "readme"^^xsd:string ;
+  rdfs:range schema:URL .
+
+<https://w3id.org/codemeta/referencePublication>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  schema:rangeIncludes schema:ScholarlyArticle ;
+  rdfs:comment "An academic publication related to the software. Property defined in the <a href='https://codemeta.github.io/terms/' target='_blank'>Codemeta terms</a>."^^xsd:string ;
+  rdfs:domain schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:label "referencePublication"^^xsd:string ;
+  rdfs:range schema:ScholarlyArticle .
+
+<https://discovery.biothings.io/view/maSMP/changelog>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  schema:rangeIncludes schema:URL ;
+  rdfs:comment "Link to CHANGELOG file."^^xsd:string ;
+  rdfs:domain schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  rdfs:label "changelog"^^xsd:string ;
+  rdfs:range schema:URL .
+
+<https://discovery.biothings.io/view/maSMP/deployInstructions>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  schema:rangeIncludes schema:Text, schema:URL ;
+  rdfs:comment "Text or link to deployment instructions/documentation."^^xsd:string ;
+  rdfs:domain schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  rdfs:label "deployInstructions"^^xsd:string ;
+  rdfs:range schema:Text, schema:URL .
+
+<https://discovery.biothings.io/view/maSMP/developerDocumentation>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  schema:rangeIncludes schema:CreativeWork ;
+  rdfs:comment "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software"^^xsd:string ;
+  rdfs:domain schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:label "developerDocumentation"^^xsd:string ;
+  rdfs:range schema:CreativeWork .
+
+<https://discovery.biothings.io/view/maSMP/installInstructions>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  schema:rangeIncludes schema:Text, schema:URL ;
+  rdfs:comment "Text or link to installation instructions/documentation. It should not be confused with the installUrl which points to a place where the installation package (e.g., .exe) can be found."^^xsd:string ;
+  rdfs:domain schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  rdfs:label "installInstructions"^^xsd:string ;
+  rdfs:range schema:Text, schema:URL .
+
+<https://discovery.biothings.io/view/maSMP/learningResource>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  schema:rangeIncludes schema:LearningResource ;
+  rdfs:comment "Any <a href='https://schema.org/LearningResource' target='_blank'>LearningResource</a> that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software."^^xsd:string ;
+  rdfs:domain schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:label "learningResource"^^xsd:string ;
+  rdfs:range schema:LearningResource .
+
+<https://discovery.biothings.io/view/maSMP/testInstructions>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  schema:rangeIncludes schema:Text, schema:URL ;
+  rdfs:comment "Text or link to testing instructions/documentation."^^xsd:string ;
+  rdfs:domain schema:SoftwareApplication, schema:SoftwareSourceCode ;
+  rdfs:label "testInstructions"^^xsd:string ;
+  rdfs:range schema:Text, schema:URL .
+
+<https://discovery.biothings.io/view/maSMP/testedWith>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  schema:rangeIncludes <https://discovery.biothings.io/view/maSMP/SoftwareTestAction> ;
+  rdfs:comment "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software."^^xsd:string ;
+  rdfs:domain schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:label "testedWith"^^xsd:string ;
+  rdfs:range <https://discovery.biothings.io/view/maSMP/SoftwareTestAction> .
+
+<https://discovery.biothings.io/view/maSMP/userDocumentation>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  schema:rangeIncludes schema:CreativeWork ;
+  rdfs:comment "Documentation about this software directed to users who will use this software as it is."^^xsd:string ;
+  rdfs:domain schema:SoftwareSourceCode, schema:SoftwareApplication ;
+  rdfs:label "userDocumentation"^^xsd:string ;
+  rdfs:range schema:CreativeWork .
+
+<https://discovery.biothings.io/view/maSMP/versionControlSystem>
+  a rdf:Property ;
+  schema:domainIncludes schema:SoftwareSourceCode ;
+  schema:rangeIncludes schema:SoftwareApplication ;
+  rdfs:comment "Version control system used for this source code, to keep track of all commits, branches and so."^^xsd:string ;
+  rdfs:domain schema:SoftwareSourceCode ;
+  rdfs:label "versionControlSystem"^^xsd:string ;
+  rdfs:range schema:SoftwareApplication .
+
+<https://discovery.biothings.io/view/maSMP/OutputManagementPlan>
+  a rdfs:Class ;
+  rdfs:comment "Management plans (e.g., data, software, other research output/outcomes/artifacts) are a tool for researchers and research stewards to organize and plan around research artifacts, from initial ideas to publication. This type builds on top of <a href='https://schema.datacite.org/meta/kernel-4.4/' target='_blank'>DataCite Metadata Schema 4.4</a> and maps it mandatory elements to schema.org to represent research artifact management plans. This type could be extended to cover particularities wrt management plans for specific research outcomes, e.g., data management plans or software management plans."^^xsd:string ;
+  rdfs:label "OutputManagementPlan"^^xsd:string ;
+  rdfs:subClassOf schema:CreativeWork .
+
+<https://discovery.biothings.io/view/maSMP/researchProject>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
+  schema:rangeIncludes schema:ResearchProject ;
+  rdfs:comment "Link to the research project this mng plan belongs to"^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
+  rdfs:label "researchProject"^^xsd:string ;
+  rdfs:range schema:ResearchProject .
+
+<https://discovery.biothings.io/view/maSMP/relatedMngPlans>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
+  schema:rangeIncludes <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
+  rdfs:comment "Link to other management plans associated to this one, e.g., an SMP associated to the DMP on the datasets used by the software"^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
+  rdfs:label "relatedMngPlans"^^xsd:string ;
+  rdfs:range <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> .
+
+<https://discovery.biothings.io/view/maSMP/questionnaire>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
+  schema:rangeIncludes schema:Question, schema:ItemList ;
+  rdfs:comment "Questions asked in this management plan. If order or grouping is important <a href='https://schema.org/ItemList' target='_blank'>ItemList</a> can be used, otherwise an array of <a href='https://schema.org/Question' target='_blank'>Question</a> would work."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> ;
+  rdfs:label "questionnaire"^^xsd:string ;
+  rdfs:range schema:Question, schema:ItemList .
+
+<https://discovery.biothings.io/view/maSMP/SoftwareManagementPlan>
+  a rdfs:Class ;
+  rdfs:comment "Software Management plan."^^xsd:string ;
+  rdfs:label "SoftwareManagementPlan"^^xsd:string ;
+  rdfs:subClassOf <https://discovery.biothings.io/view/maSMP/OutputManagementPlan> .
+
+<https://discovery.biothings.io/view/maSMP/managedSoftware>
+  a rdf:Property ;
+  schema:domainIncludes <https://discovery.biothings.io/view/maSMP/SoftwareManagementPlan> ;
+  schema:rangeIncludes schema:SoftwareSourceCode ;
+  rdfs:comment "SoftwareSourceCode handled by this software mng plan. Software applications, tools and releases from the source code should be linked directly to the source code."^^xsd:string ;
+  rdfs:domain <https://discovery.biothings.io/view/maSMP/SoftwareManagementPlan> ;
+  rdfs:label "managedSoftware"^^xsd:string ;
+  rdfs:range schema:SoftwareSourceCode .
