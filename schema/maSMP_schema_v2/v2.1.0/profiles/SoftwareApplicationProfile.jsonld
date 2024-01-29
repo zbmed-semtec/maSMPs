@@ -10,10 +10,10 @@
   },
   "@graph": [
     {
-      "@id": "maSMPProfiles:SoftwareApplication",
+      "@id": "maSMPProfiles:SoftwareApplicationProfile",
       "@type": "rdfs:Class",
       "rdfs:comment": "Profile of schema:SoftwareApplication using properties corresponding to the Software Management Plan use case. ",
-      "rdfs:label": "SoftwareApplication",
+      "rdfs:label": "SoftwareApplicationProfile",
       "rdfs:subClassOf": {
         "@id": "schema:SoftwareApplication"
       },
