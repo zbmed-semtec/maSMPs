@@ -1,18 +1,21 @@
 {
   "@context": {
     "schema": "http://schema.org/",
+    "bs": "https://bioschemas.org/terms/",
+    "codemeta": "https://w3id.org/codemeta/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "softestaction": "https://discovery.biothings.io/view/softestaction/"
+    "maSMP": "https://discovery.biothings.io/view/maSMP/",
+    "maSMPProfiles": "https://discovery.biothings.io/view/maSMPProfiles/"
   },
   "@graph": [
     {
-      "@id": "softestaction:SoftwareTestAction",
+      "@id": "maSMPProfiles:SoftwareTestActionProfile",
       "@type": "rdfs:Class",
       "rdfs:comment": "The act of testing a software according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
-      "rdfs:label": "SoftwareTestAction",
+      "rdfs:label": "SoftwareTestActionProfile",
       "rdfs:subClassOf": {
-        "@id": "maSMP:SoftwareTestAction"
+          "@id": "maSMP:SoftwareTestAction"
       },
       "$validation": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -23,7 +26,7 @@
             "owl:cardinality": "one"
           },
           "testInput": {
-            "description": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.",
+            "description": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If order or grouping is important in the case of multiple inputs, a ListItem could help.",
             "owl:cardinality": "many"
           },
           "testType": {
@@ -41,6 +44,10 @@
           "description": {
             "description": "A description of the item.",
             "owl:cardinality": "one"
+          },
+          "sameAs": {
+            "description": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
+            "owl:cardinality": "many"
           }
         },
         "required": [
@@ -49,7 +56,8 @@
         ],
         "recommended": [
           "result",
-          "description"
+          "description",
+          "sameAs"
         ],
         "optional": [
           "testInput",
