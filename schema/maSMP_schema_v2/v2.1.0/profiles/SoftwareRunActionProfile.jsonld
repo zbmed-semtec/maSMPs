@@ -1,18 +1,21 @@
 {
   "@context": {
     "schema": "http://schema.org/",
+    "bs": "https://bioschemas.org/terms/",
+    "codemeta": "https://w3id.org/codemeta/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "maSMP": "https://discovery.biothings.io/view/maSMP/"
+    "maSMP": "https://discovery.biothings.io/view/maSMP/",
+    "maSMPProfiles": "https://discovery.biothings.io/view/maSMPProfiles/"
   },
   "@graph": [
     {
-      "@id": "maSMP:SoftwareRunAction",
+      "@id": "maSMPProfiles:SoftwareRunActionProfile",
       "@type": "rdfs:Class",
       "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
-      "rdfs:label": "SoftwareRunAction",
+      "rdfs:label": "SoftwareRunActionProfile",
       "rdfs:subClassOf": {
-        "@id": "schema:Action"
+        "@id": "maSMP:SoftwareRunAction"
       },
       "$validation": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -45,13 +48,18 @@
           "result": {
             "description": "The result produced in the action. e.g. John wrote *a book*.",
             "owl:cardinality": "many"
+          },
+          "sameAs": {
+            "description": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
+            "owl:cardinality": "many"
           }
         },
         "required": [
           "softwareRun"
         ],
         "recommended": [
-          "result"
+          "result",
+          "sameAs"
         ],
         "optional": [
           "operatingSystem",
