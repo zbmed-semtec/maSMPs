@@ -1,7 +1,7 @@
 # maSMP Project 
 _machine-actionable Software Management Plans_
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7806638.svg)](https://doi.org/10.5281/zenodo.7806638)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7806638.svg)](https://doi.org/10.5281/zenodo.7806638) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10582121.svg)](https://doi.org/10.5281/zenodo.10582121)
 
 [![Version](https://img.shields.io/badge/Version-2.1.0-orange)](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_v2.jsonld) [![Schema](https://img.shields.io/badge/Schema-maSMP-orange)](https://discovery.biothings.io/ns/maSMP) [![Release](https://img.shields.io/badge/Release-2.1.0-orange)](#) 
 
