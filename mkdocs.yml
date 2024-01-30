@@ -9,11 +9,11 @@ nav:
       - 'Types/SoftwareRunAction.md'
       - 'Types/SoftwareTestAction.md'
     - Profiles:
-      - 'Types/SoftwareManagementPlan.md'
-      - 'Types/SoftwareSourceCode.md'
-      - 'Types/SoftwareApplication.md'
-      - 'Types/SoftwareRunAction.md'
-      - 'Types/SoftwareTestAction.md'
+      - 'Profiles/SoftwareManagementPlan.md'
+      - 'Profiles/SoftwareSourceCode.md'
+      - 'Profiles/SoftwareApplication.md'
+      - 'Profiles/SoftwareRunAction.md'
+      - 'Profiles/SoftwareTestAction.md'
     - 'about.md'
       
     
