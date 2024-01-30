@@ -11,10 +11,19 @@ All types and properties for the maSMP metadata schema can be found at the [maSM
 Note of caution: We intend to push types and profiles to [Bioschemas](https://bioschemas.org) so a broader community can provide feedback and adopt the maSMP approach. We use these pages, the [GitHub repository](https://github.com/zbmed-semtec/maSMPs) and the [DDE namespace](https://discovery.biothings.io/ns/maSMP) as staging areas for development. We will keep here the latest version and history of previous versions. We will also maintain the [DDE namespace](https://discovery.biothings.io/ns/maSMP) up-to-date. Using one or the other should be equivalent but we suggest using the version hosted at Bioschemas.
 
 The current list of maSMP types and location within the schema.org hierarchy is shown below:
-
 * schema:Thing -> schema:CreativeWork -> [maSMP:OutputManagemenPlan](../Types/OutputManagementPlan) (new type with properties): This type aims at representing output management plans, e.g., software management plans
 * schema:Thing -> schema:CreativeWork -> maSMP:OutputManagemenPlan -> [maSMP:SoftwareManagementPlan](../Types/SoftwareManagementPlan) (new type with properties): Output management plan we are most interested in, i.e., Software Management Plans
-* schema:Thing -> schema:CreativeWork -> SoftwareApplication -> [maSMP:SoftwareApplication](../Types/SoftwareApplication) (new properties): Mostly new properties useful for the maSMP case
-* schema:Thing -> schema:CreativeWork -> SoftwareSourceCode -> [maSMP:SoftwareSourceCode](../Types/SoftwareSourceCode) (new properties): Mostly new properties useful for the maSMP case
 * schema:Thing -> schema:Action -> [maSMP:SoftwareRunAction](../Types/SoftwareRunAction) (new type with properties): This type aims at representing executions of a software handled by a maSMP:SoftwareManagementPlan. The execution we are most interested in is the one provided by the own developers, showcasing how to use the software with a particular input to obtain a particular known output. Third-party developers and users should ideally use this execution together with corresonding documentation to use the software as intended by its developers.
 * schema:Thing -> schema:Action -> [maSMP:SoftwareTestAction](../Types/SoftwareTestAction) (new type with properties): This type aims at representing testing done on a software. From the maSMP perspective, depending on how much information about testing should be collected, naming the tests done as schema:Text (or even better as schema:DefinedTerm using a controlled vocabulary on software testing --Wikidata have a good collection) may be enough
+
+We also add some new properties to types in schema.org
+* schema:Thing -> schema:CreativeWork, e.g., intendedUse and ethicalLegalSocial
+* schema:Thing -> schema:CreativeWork -> SoftwareApplication
+* schema:Thing -> schema:CreativeWork -> SoftwareSourceCode
+
+The maSMP profiles provide some guidance on what properties are more relevant and how to use them
+* [maSMPProfiles:SoftwareManagementPlanProfile](../Profiles/SoftwareManagementPlan)
+* [maSMPProfiles:SoftwareRunActionProfile](../Profiles/SoftwareRunAction)
+* [maSMPProfiles:SoftwareTestActionProfile](../Profiles/SoftwareTestAction)
+* [maSMPProfiles:SoftwareApplicationProfile](../Profiles/SoftwareApplication)
+* [maSMPProfiles:SoftwareSourceCodeProfile](../Profiles/SoftwareSourceCode)
