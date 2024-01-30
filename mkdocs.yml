@@ -6,6 +6,10 @@ nav:
     - Types:
       - 'Types/OutputManagementPlan.md'
       - 'Types/SoftwareManagementPlan.md'
+      - 'Types/SoftwareRunAction.md'
+      - 'Types/SoftwareTestAction.md'
+    - Profiles:
+      - 'Types/SoftwareManagementPlan.md'
       - 'Types/SoftwareSourceCode.md'
       - 'Types/SoftwareApplication.md'
       - 'Types/SoftwareRunAction.md'

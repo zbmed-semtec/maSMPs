@@ -7,7 +7,9 @@ This project corresponds to an extension of the Research Data Alliance (RDA) [ma
 
 Additional Information available at our [GitHub repository](https://github.com/zbmed-semtec/maSPMs).
 
-Ontology releases available at [DOI](https://doi.org/10.5281/zenodo.7806639).
+Ontology releases are available at [DOI:10.5281/zenodo.7806638](https://doi.org/10.5281/zenodo.7806638) while usage guidance (aka profiles, e.g., minimum, recommended and optional properties with cardinality) at [DOI:10.5281/zenodo.10582120](https://doi.org/10.5281/zenodo.10582120). The current release corresponds to vr.2.1.0 for types and properties and to vr2.1.1 for profiles. This release includes four types: OuputManagementPlan, SoftwareManagementPlan, SoftwareRunAction and SoftwareTestAction, and additional properties for schema:CreativeWork, schema:SoftwareApplication and schema:SoftwareSourceCode. Profiles are provided for: SoftwareManagementPlan, SoftwareRunAction, SoftwareTestAction, schema:SoftwareApplication and schema:SoftwareSourceCode.
+
+[maSMP types](https://discovery.biothings.io/ns/maSMP) and [maSMP profiles](https://discovery.biothings.io/ns/maSMPProfiles) can be visualized in the DDE platform. We also provide embedded pages of the DDE views here, see menu on the left. The corresponding files are in the GitHub repo, [types and properties vr 2.1.0](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_v2.jsonld), also as [TTL](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_v2.ttl), and corresponding [profiles vr2.1.1](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_profiles_v2.jsonld).
 
 
 ## Project Layout
@@ -59,3 +61,5 @@ Ontology releases available at [DOI](https://doi.org/10.5281/zenodo.7806639).
 * [RDA machine-actionable Data Management Plan (maDMP)](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard)
 * [ELIXIR Software Management Plans (SMPs)](https://doi.org/10.37044/osf.io/k8znb)
 * [Practical guide to Software Management Plans](https://zenodo.org/record/7248877#.Y4XeHXaZOUk)
+* Crosswalks from [May 2023](https://doi.org/10.5281/zenodo.8087356) and [December 2023](https://doi.org/10.5281/zenodo.10275894)
+* [Five Minutes to Write a Software Management Plan – A Machine-actionable Approach to Simplify the Creation of SMPs](https://doi.org/10.5281/zenodo.10374839)
