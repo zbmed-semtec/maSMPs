@@ -165,6 +165,10 @@
             "description": "Link to other management plans associated to this one, e.g., an SMP associated to the DMP on the datasets used by the software",
             "owl:cardinality": "many"
           },
+          "archivedAt": {
+            "description": "Indicates a page or other link involved in archival of a [[CreativeWork]]. In the case of [[MediaReview]], the items in a [[MediaReviewItem]] may often become inaccessible, but be archived by archival, journalistic, activist, or law enforcement organizations. In such cases, the referenced page may not directly publish the content.",
+            "owl:cardinality": "many"
+          },
           "researchProject": {
             "description": "Link to the research project this mng plan belongs to",
             "owl:cardinality": "many"
