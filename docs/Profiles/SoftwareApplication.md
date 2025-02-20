@@ -8,4 +8,12 @@ Profile of schema:SoftwareApplication using properties corresponding to the Soft
       Property Expected Type                 Description Cardinality
 0  description                A description of the item.         one
 1         name                     The name of the item.         one
+2          url                          URL of the item.         one##Recommended properties
+      Property Expected Type                 Description Cardinality
+0  description                A description of the item.         one
+1         name                     The name of the item.         one
+2          url                          URL of the item.         one##Optional properties
+      Property Expected Type                 Description Cardinality
+0  description                A description of the item.         one
+1         name                     The name of the item.         one
 2          url                          URL of the item.         one
