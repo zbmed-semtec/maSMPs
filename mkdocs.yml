@@ -4,11 +4,13 @@ nav:
     - 'index.md'
     - 'maSMP_Schema.md'
     - Types:
+      - 'Types/index.md'
       - 'Types/OutputManagementPlan.md'
       - 'Types/SoftwareManagementPlan.md'
       - 'Types/SoftwareRunAction.md'
       - 'Types/SoftwareTestAction.md'
     - Profiles:
+      - 'Profiles/index.md'
       - 'Profiles/SoftwareManagementPlan.md'
       - 'Profiles/SoftwareSourceCode.md'
       - 'Profiles/SoftwareApplication.md'

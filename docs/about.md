@@ -1,4 +1,4 @@
-<h1> About us</h1>
+<h1>About us</h1>
 
 <p align='justify'>
 A metadata model containing the required metadata items for an maSMP has been established in the form of an ontology. The software management planning entities that are included in the metadata model include the SMP itself, software source code, software releases, documentation, authors, and their connections. With a few of our own additions, we primarily utilize terms from schema.org and DCSO.</p>
@@ -9,6 +9,7 @@ A metadata model containing the required metadata items for an maSMP has been es
 * Lukas Geist
 * Nelson Quiñones
 * Dhwani Solanki
+* Suhasini Venkatesh
 * Dietrich Rebholz-Schuhmann
 
 [CITATION file available](https://github.com/zbmed-semtec/maSPMs/blob/main/CITATION.cff)
