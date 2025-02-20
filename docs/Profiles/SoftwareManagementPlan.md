@@ -1,4 +1,15 @@
-<div>
-    <iframe src="https://discovery.biothings.io/ns/maSMPProfiles/maSMPProfiles:SoftwareManagementPlanProfile" height="600" width="800" allowfullscreen="" frameborder="0">
-    </iframe>
-</div>
+<h1>SoftwareManagementPlanProfile</h1>
+
+SoftwareManagementPlanProfile is profile for <a href='../../Types/SoftwareManagementPlan'>maSMP:SoftwareManagementPlan</a>
+
+Software Management plan.
+
+##Minimum properties
+          Property Expected Type                                                                                                                                                                                                                                                                                                                                 Description Cardinality
+0  managedSoftware                                                                                                                                                                                        SoftwareSourceCode handled by this software mng plan. Software applications, tools and releases from the source code should be linked directly to the source code.        many
+1  researchProject                                                                                                                                                                                                                                                                                                     Link to the research project this mng plan belongs to        many
+2           author                                                                                                                               The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.        many
+3    datePublished                                                                                                                                                                                                                                                                                                                      Date of first broadcast/publication.         one
+4        publisher                                                                                                                                                                                                                                                                                                                       The publisher of the creative work.        many
+5       identifier                The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.\n                many
+6             name                                                                                                                                                                                                                                                                                                                                     The name of the item.         one

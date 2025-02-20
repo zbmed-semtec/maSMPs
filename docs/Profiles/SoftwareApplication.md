@@ -1,4 +1,11 @@
-<div>
-    <iframe src="https://discovery.biothings.io/ns/maSMPProfiles/maSMPProfiles:SoftwareApplicationProfile" height="600" width="800" allowfullscreen="" frameborder="0">
-    </iframe>
-</div>
+<h1>SoftwareApplicationProfile</h1>
+
+SoftwareApplicationProfile is profile for <a href='schema:SoftwareApplication' target='_blank'>schema:SoftwareApplication</a>
+
+Profile of schema:SoftwareApplication using properties corresponding to the Software Management Plan use case. 
+
+##Minimum properties
+      Property Expected Type                 Description Cardinality
+0  description                A description of the item.         one
+1         name                     The name of the item.         one
+2          url                          URL of the item.         one
