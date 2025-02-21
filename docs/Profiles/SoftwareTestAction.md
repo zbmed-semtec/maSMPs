@@ -8,20 +8,20 @@ The act of testing a software according to its specifications. For instance, tes
 
 <table>
 <tr><td>Property</td><td>Expected Type</td><td>Description</td><td>Cardinality</td></tr>
-<tr><td>softwareTested</td> <td></td>          <td>Link to the software tested by this action.</td> <td>one</td></tr>
-      <tr><td>testType</td> <td></td> <td>The type of test that it is performed on the object.</td> <td>one</td></tr></table>
+<tr><td>softwareTested</td>                <td><a href='http://schema.org/SoftwareSourceCode' target='_blank'>SoftwareSourceCode</a> or <a href='http://schema.org/SoftwareApplication' target='_blank'>SoftwareApplication</a></td>          <td>Link to the software tested by this action.</td> <td>one</td></tr>
+      <tr><td>testType</td> <td><a href='http://schema.org/Text' target='_blank'>Text</a> or <a href='http://schema.org/URL' target='_blank'>URL</a> or <a href='http://schema.org/DefinedTerm' target='_blank'>DefinedTerm</a></td> <td>The type of test that it is performed on the object.</td> <td>one</td></tr></table>
 
 ## Recommended properties
 
 <table>
 <tr><td>Property</td><td>Expected Type</td><td>Description</td><td>Cardinality</td></tr>
-     <tr><td>result</td> <td></td>                                                                                                  <td>The result produced in the action. e.g. John wrote *a book*.</td> <td>many</td></tr>
-<tr><td>description</td> <td></td>                                                                                                                                    <td>A description of the item.</td>  <td>one</td></tr>
-     <tr><td>sameAs</td> <td></td> <td>URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.</td> <td>many</td></tr></table>
+     <tr><td>result</td> <td>schema.org ranges</td>                                                                                                  <td>The result produced in the action. e.g. John wrote *a book*.</td> <td>many</td></tr>
+<tr><td>description</td> <td>schema.org ranges</td>                                                                                                                                    <td>A description of the item.</td>  <td>one</td></tr>
+     <tr><td>sameAs</td> <td>schema.org ranges</td> <td>URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.</td> <td>many</td></tr></table>
 
 ## Optional properties
 
 <table>
 <tr><td>Property</td><td>Expected Type</td><td>Description</td><td>Cardinality</td></tr>
-<tr><td>testInput</td> <td></td> <td>Input used to performed the test. Some tests may not require any input, some may require multiple ones. If order or grouping is important in the case of multiple inputs, a ListItem could help.</td> <td>many</td></tr>
-   <tr><td>target</td> <td></td>                                                                                                                                                     <td>Indicates a target EntryPoint for an Action.</td> <td>many</td></tr></table>
+<tr><td>testInput</td> <td><a href='http://schema.org/Thing' target='_blank'>Thing</a> or <a href='http://schema.org/ListItem' target='_blank'>ListItem</a></td> <td>Input used to performed the test. Some tests may not require any input, some may require multiple ones. If order or grouping is important in the case of multiple inputs, a ListItem could help.</td> <td>many</td></tr>
+   <tr><td>target</td>                                                                                                                <td>schema.org ranges</td>                                                                                                                                                     <td>Indicates a target EntryPoint for an Action.</td> <td>many</td></tr></table>
