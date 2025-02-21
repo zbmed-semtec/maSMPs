@@ -21,7 +21,8 @@ nav:
     
 theme:
   name: material
-  
+  logo: maSMP_logo.png
+
   language: en
   palette:
     - scheme: default

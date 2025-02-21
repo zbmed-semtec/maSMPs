@@ -1,5 +1,11 @@
 # maSMP Project 
-_machine-actionable Software Management Plans_
+<table>
+<tr>
+<td><img src="./maSMP_logo.png" alt="maSMP" width="75"/></td>
+<td><i>machine-actionable Software Management Plans</i></td>
+</tr>
+</table>
+
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7806638.svg)](https://doi.org/10.5281/zenodo.7806638) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10582121.svg)](https://doi.org/10.5281/zenodo.10582121)
 
