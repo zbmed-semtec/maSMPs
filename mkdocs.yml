@@ -16,6 +16,7 @@ nav:
       - 'Profiles/SoftwareApplication.md'
       - 'Profiles/SoftwareRunAction.md'
       - 'Profiles/SoftwareTestAction.md'
+    - 'tools.md'
     - 'about.md'
       
     
