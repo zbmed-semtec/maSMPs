@@ -17,3 +17,7 @@ All types and properties for the maSMP metadata schema can also be found at the 
 <tr><td><a href='./SoftwareManagementPlan'>SoftwareManagementPlan</a></td><td>Software Management plan.</td></tr>
 
 </table>
+
+If you want to cite the maSMP metadata schema/ontology:
+
+Castro Leyla Jael, Giraldo Olga, Geist Lukas, Quiñones Nelson, Solanki Dhwani, & Rebholz-Schuhmann Dietrich. (2024). machine-actionable Software Management Plan Ontology (maSMP Ontology) (2.1.0). Zenodo. https://doi.org/10.5281/zenodo.10582073
