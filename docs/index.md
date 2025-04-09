@@ -23,6 +23,10 @@ Ontology releases are available at [DOI:10.5281/zenodo.7806638](https://doi.org/
 
 [maSMP types](https://discovery.biothings.io/ns/maSMP) and [maSMP profiles](https://discovery.biothings.io/ns/maSMPProfiles) can be visualized in the DDE platform. We also provide embedded pages of the DDE views here, see menu on the left. The corresponding files are in the GitHub repo, [types and properties vr 2.1.0](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_v2.jsonld), also as [TTL](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_v2.ttl), and corresponding [profiles vr2.1.1](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_profiles_v2.jsonld).
 
+## Metadata
+
+You can find schema.org [metadata markup for our maSMP project](https://zbmed-semtec.github.io/projects/2022_maSMP) in our team pages.
+
 
 ## Project Layout
 

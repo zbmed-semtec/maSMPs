@@ -24,3 +24,8 @@ To avoid conflict/confusion between types and profiles, all the profile names en
 <tr><td><a href='./SoftwareSourceCode'>SoftwareSourceCodeProfile</a></td><td>Profile of schema:SoftwareSourceCode using properties corresponding to the Software Management Plan use case</td></tr>
 
 </table>
+
+
+If you want to cite the maSMP profiles (i.e., recommendations of used following the [Bioschemas](https://bioschemas.org) way):
+
+Castro, L. J., Giraldo, O., Geist, L., Quiñones, N., Solanki, D., & Rebholz-Schuhmann, D. (2024). Usage guidance (aka profiles) for the machine-actionable Software Management Plan Ontology (2.1.1). Zenodo. https://doi.org/10.5281/zenodo.10582121
