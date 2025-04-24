@@ -6,12 +6,13 @@
 </tr>
 </table>
 
+GitHub repository [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14904874.svg)](https://doi.org/10.5281/zenodo.14904874)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7806638.svg)](https://doi.org/10.5281/zenodo.7806638) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10582121.svg)](https://doi.org/10.5281/zenodo.10582121)
+maSMP ontology
+[![Types](https://img.shields.io/badge/Types-jsonld-orange)](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_v2.jsonld) [![Schema](https://img.shields.io/badge/Schema-maSMP-orange)](https://discovery.biothings.io/ns/maSMP) [![Release](https://img.shields.io/badge/Release-2.1.0-orange)](#) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7806638.svg)](https://doi.org/10.5281/zenodo.7806638)
 
-[![Types](https://img.shields.io/badge/Types-jsonld-orange)](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_v2.jsonld) [![Schema](https://img.shields.io/badge/Schema-maSMP-orange)](https://discovery.biothings.io/ns/maSMP) [![Release](https://img.shields.io/badge/Release-2.1.0-orange)](#) 
-
-[![Profiles](https://img.shields.io/badge/Profiles-jsonld-pink)](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_profiles_v2.jsonld) [![Profile Schema](https://img.shields.io/badge/Schema-maSMPProfile-pink)](https://discovery.biothings.io/ns/maSMPProfiles) [![Release](https://img.shields.io/badge/Release-2.1.1-pink)](#) 
+maSMP profiles
+[![Profiles](https://img.shields.io/badge/Profiles-jsonld-pink)](https://github.com/zbmed-semtec/maSMPs/blob/main/schema/maSMP_schema_v2/maSMP_profiles_v2.jsonld) [![Profile Schema](https://img.shields.io/badge/Schema-maSMPProfile-pink)](https://discovery.biothings.io/ns/maSMPProfiles) [![Release](https://img.shields.io/badge/Release-2.1.1-pink)](#) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10582121.svg)](https://doi.org/10.5281/zenodo.10582121)
 
 ## Description
 
