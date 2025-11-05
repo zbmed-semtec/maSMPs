@@ -18,6 +18,9 @@ nav:
       - 'Profiles/SoftwareTestAction.md'
     - 'tools.md'
     - 'about.md'
+    - 'Legal notice': 'https://www.zbmed.de/en/legal-notice'
+    - 'Disclaimer': 'https://www.zbmed.de/en/disclaimer'
+    - 'Privacy policy': 'https://www.zbmed.de/en/privacy-policy'
       
     
 theme:

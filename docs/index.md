@@ -1,7 +1,13 @@
 # maSMP Project 
+
+|              |    |    |
+:---------------------:|:---------------------:|:---------------------:
+![NFDI4DataScience](nfdi4ds_logo_badge.png)  | ![DMP4NFDI](dmp4nfdi.png)  | A metadata service in collaboration between [NFDI4DataScience](https://www.nfdi4datascience.de/) and [DMP4NFDI](https://base4nfdi.de/projects/dmp4nfdi)
+
+
 <table>
 <tr>
-<td><img src="./maSMP_logo.png" alt="maSMP" width="75"/></td>
+<td><img src="./maSMP_new_logo.png" alt="maSMP" width="75"/></td>
 <td><i>machine-actionable Software Management Plans</i></td>
 </tr>
 </table>
