@@ -28,4 +28,13 @@ To avoid conflict/confusion between types and profiles, all the profile names en
 
 If you want to cite the maSMP profiles (i.e., recommendations of used following the [Bioschemas](https://bioschemas.org) way):
 
-Castro, L. J., Giraldo, O., Geist, L., Quiñones, N., Solanki, D., & Rebholz-Schuhmann, D. (2024). Usage guidance (aka profiles) for the machine-actionable Software Management Plan Ontology (2.1.1). Zenodo. https://doi.org/10.5281/zenodo.10582121
+Castro, L. J., Giraldo, O., Geist, L., Quiñones, N., Solanki, D., & Rebholz-Schuhmann, D. (2024). Usage guidance (aka profiles) for the machine-actionable Software Management Plan Ontology (2.1.1). Zenodo. https://doi.org/10.5281/zenodo.
+
+<hr/>
+<table align="center" style="width:100%">
+  <tr>
+  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
+  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
+  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
+  </tr>
+</table> 

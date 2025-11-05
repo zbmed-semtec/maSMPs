@@ -86,3 +86,12 @@ You can find schema.org [metadata markup for our maSMP project](https://zbmed-se
 * [Practical guide to Software Management Plans](https://zenodo.org/record/7248877#.Y4XeHXaZOUk)
 * Crosswalks from [May 2023](https://doi.org/10.5281/zenodo.8087356) and [December 2023](https://doi.org/10.5281/zenodo.10275894)
 * [Five Minutes to Write a Software Management Plan – A Machine-actionable Approach to Simplify the Creation of SMPs](https://doi.org/10.5281/zenodo.10374839)
+
+<hr/>
+<table align="center" style="width:100%">
+  <tr>
+  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
+  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
+  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
+  </tr>
+</table> 

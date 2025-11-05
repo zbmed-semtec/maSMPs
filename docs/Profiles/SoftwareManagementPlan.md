@@ -34,3 +34,12 @@ Software Management plan.
     <tr><td><a href='http://schema.org/contributor' target='_blank'>contributor</a></td>                                    <td>See range for <a href='http://schema.org/contributor' target='_blank'>contributor</a> in schema.org</td>                                                                                                                                                                                                   <td>A secondary contributor to the CreativeWork or Event.</td> <td>many</td></tr>
           <tr><td><a href='http://schema.org/headline' target='_blank'>headline</a></td>                                          <td>See range for <a href='http://schema.org/headline' target='_blank'>headline</a> in schema.org</td>                                                                                                                                                                                                                                <td>Headline of the article.</td>  <td>one</td></tr>
 <tr><td><a href='http://schema.org/alternateName' target='_blank'>alternateName</a></td>                                <td>See range for <a href='http://schema.org/alternateName' target='_blank'>alternateName</a> in schema.org</td>                                                                                                                                                                                                                                  <td>An alias for the item.</td> <td>many</td></tr></table>
+
+<hr/>
+<table align="center" style="width:100%">
+  <tr>
+  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
+  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
+  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
+  </tr>
+</table> 

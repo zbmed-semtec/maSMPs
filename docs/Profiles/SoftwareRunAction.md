@@ -26,3 +26,12 @@ The act of testing an object according to its specifications. For instance, test
             <tr><td><a href='http://schema.org/runtimePlatform' target='_blank'>runtimePlatform</a></td>   <td><a href='http://schema.org/Text' target='_blank'>Text</a></td>        <td>If the running was done by a direct execution (rather than via a container), indicate the runtime platform.</td>  <td>one</td></tr>
                                                                          <tr><td>maSMP:runContainer</td>     <td><a href='http://schema.org/URL' target='_blank'>URL</a></td>                               <td>If the running was done using a container, such container should be pointed to here.</td>  <td>one</td></tr>
                                                                              <tr><td>maSMP:runInput</td> <td><a href='http://schema.org/Thing' target='_blank'>Thing</a></td>                                                                <td>Actual input used by this action to run a software.</td> <td>many</td></tr></table>
+
+<hr/>
+<table align="center" style="width:100%">
+  <tr>
+  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
+  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
+  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
+  </tr>
+</table> 

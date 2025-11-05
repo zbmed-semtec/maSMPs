@@ -11,3 +11,12 @@
 All types and properties for the maSMP metadata schema can be found at the [maSMP DDE namespace](https://discovery.biothings.io/ns/maSMP) while the profiles are located under the [maSMPProfiles DDE namespace](https://discovery.biothings.io/ns/maSMPProfiles). The [Data Discovery Engine (DDE) platform](https://discovery.biothings.io/) promotes FAIR data-sharing best practices by facilitating the creation and hosting of metadata schemas based on schema.org. 
 
 Note of caution: We intend to push types and profiles to [Bioschemas](https://bioschemas.org) so a broader community can provide feedback and adopt the maSMP approach. We use these pages, the [GitHub repository](https://github.com/zbmed-semtec/maSMPs) and the [DDE namespace](https://discovery.biothings.io/ns/maSMP) as staging areas for development. We will keep here the latest version and history of previous versions. We will also maintain the [DDE namespace](https://discovery.biothings.io/ns/maSMP) up-to-date. Using one or the other should be equivalent but we suggest using the version hosted at Bioschemas.
+
+<hr/>
+<table align="center" style="width:100%">
+  <tr>
+  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
+  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
+  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
+  </tr>
+</table> 
