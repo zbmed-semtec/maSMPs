@@ -1,5 +1,5 @@
 site_name: maSMP
-site_url: https://masmp.com/
+site_url: https://zbmed-semtec.github.io/maSMP/
 nav:
     - 'index.md'
     - 'maSMP_Schema.md'
@@ -25,7 +25,7 @@ nav:
     
 theme:
   name: material
-  logo: maSMP_logo.png
+  logo: maSMP_new_logo.png
 
   language: en
   palette:
