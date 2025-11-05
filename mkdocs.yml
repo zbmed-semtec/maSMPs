@@ -63,6 +63,14 @@ markdown_extensions:
 plugins:
   - search
 
+copyright: >
+  <div style="font-size:large; color:orange">
+  <a href="https://www.zbmed.de/en/" target="_blank">ZB MED</a> | 
+  <a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a> | 
+  <a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a> | 
+  <a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a>
+  </div>  
+
 
   
 

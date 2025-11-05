@@ -26,11 +26,3 @@ The act of testing a software according to its specifications. For instance, tes
                                               <tr><td>maSMP:testInput</td> <td><a href='http://schema.org/Thing' target='_blank'>Thing</a> or <a href='http://schema.org/ListItem' target='_blank'>ListItem</a></td> <td>Input used to performed the test. Some tests may not require any input, some may require multiple ones. If order or grouping is important in the case of multiple inputs, a ListItem could help.</td> <td>many</td></tr>
 <tr><td><a href='http://schema.org/target' target='_blank'>target</a></td>                                        <td>See range for <a href='http://schema.org/target' target='_blank'>target</a> in schema.org</td>                                                                                                                                                     <td>Indicates a target EntryPoint for an Action.</td> <td>many</td></tr></table>
 
-<hr/>
-<table align="center" style="width:100%">
-  <tr>
-  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
-  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
-  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
-  </tr>
-</table> 

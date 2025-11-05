@@ -31,11 +31,3 @@ We acknowledge feedback received from ELIXIR Tools Platform Good Practices Focus
 ## Funding
 This project is part of the [NFDI4DataScience consortium](https://www.nfdi4datascience.de/) funded by the [German Research Foundation (DFG)](https://www.dfg.de/), project number [460234259](https://gepris.dfg.de/gepris/projekt/460234259), and also part of the [DMP4NFDI](https://base4nfdi.de/projects/dmp4nfdi) NFDI4Base project funded by DFG, project number [521453681](https://gepris.dfg.de/gepris/projekt/521453681). This project received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101017536 and its initial phase (from 2022.12.01 to 2023.05.31) was part of the Research Data Alliance and European Open Science Cloud Future call 2022. This project has been supported by the Good Practices Focus Group part of the ELIXIR Tools Platform. Part of the work presented here has been developed during ELIXIR BioHackathon Europe 2022 and 2023, and NFDI4DS hackathon on maSMPs at ZB MED 2023.
 
-<hr/>
-<table align="center" style="width:100%">
-  <tr>
-  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
-  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
-  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
-  </tr>
-</table> 

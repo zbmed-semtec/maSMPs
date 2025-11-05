@@ -8,11 +8,3 @@ If you want to cite the metadata extraction tool (code, release, or docker versi
 
 Venkatesh, S., Quiñones, N., Solanki, D., Rebholz-Schuhmann, D., & Castro, L. J. (2025). v0.1.0-beta pre-release maSMPs metadata extraction (v0.1.0-beta). Zenodo. https://doi.org/10.5281/zenodo.14918500
 
-<hr/>
-<table align="center" style="width:100%">
-  <tr>
-  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
-  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
-  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
-  </tr>
-</table> 

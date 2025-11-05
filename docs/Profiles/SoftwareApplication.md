@@ -62,11 +62,3 @@ Profile of schema:SoftwareApplication using properties corresponding to the Soft
                                      <tr><td><a href='http://schema.org/maintainer' target='_blank'>maintainer</a></td>                     <td>See range for <a href='http://schema.org/maintainer' target='_blank'>maintainer</a> in schema.org</td> <td>A maintainer of a <a href='https://schema.org/Dataset' target='_blank'>Dataset</a>, software package (<a href='https://schema.org/SoftwareApplication' target='_blank'>SoftwareApplication</a>), or other <a href='https://schema.org/Project' target='_blank'>Project</a>. A maintainer is a <a href='https://schema.org/Person' target='_blank'>Person</a> or <a href='https://schema.org/Organization' target='_blank'>Organization</a> that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on "upstream" sources. When <a href='https://schema.org/maintainer' target='_blank'>maintainer</a> is applied to a specific version of something e.g. a particular version or packaging of a <a href='https://schema.org/Dataset' target='_blank'>Dataset</a>, it is always  possible that the upstream source has a different maintainer. The <a href='https://schema.org/isBasedOn' target='_blank'>isBasedOn</a> property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work.\n      </td> <td>many</td></tr></table>
 
 
-<hr/>
-<table align="center" style="width:100%">
-  <tr>
-  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
-  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
-  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
-  </tr>
-</table> 

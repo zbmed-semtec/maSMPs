@@ -22,11 +22,3 @@ If you want to cite the maSMP metadata schema/ontology:
 
 Castro Leyla Jael, Giraldo Olga, Geist Lukas, Quiñones Nelson, Solanki Dhwani, & Rebholz-Schuhmann Dietrich. (2024). machine-actionable Software Management Plan Ontology (maSMP Ontology) (2.1.0). Zenodo. https://doi.org/10.5281/zenodo.10582073
 
-<hr/>
-<table align="center" style="width:100%">
-  <tr>
-  <td><a href="https://www.zbmed.de/en/legal-notice" target="_blank">Legal notice</a></td>
-  <td><a href="https://www.zbmed.de/en/disclaimer" target="_blank">Disclaimer</a></td>
-  <td><a href="https://www.zbmed.de/en/privacy-policy" target="_blank">Privacy policy</a></td>
-  </tr>
-</table> 
