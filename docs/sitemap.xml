@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/.</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/maSMP_Schema/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Types/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Types/OutputManagementPlan/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Types/SoftwareManagementPlan/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Types/SoftwareRunAction/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Types/SoftwareTestAction/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Profiles/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Profiles/SoftwareManagementPlan/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Profiles/SoftwareSourceCode/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Profiles/SoftwareApplication/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Profiles/SoftwareRunAction/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/Profiles/SoftwareTestAction/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/tools/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zbmed-semtec.github.io/maSMPs/about/</loc>
+  <lastmod>2025-11-05T19:03:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
